@@ -1,76 +1,22 @@
-NAMESPACE          NAME                                                          READY   STATUS    RESTARTS        AGE
-kube-system        coredns-ccb96694c-s99mf                                       1/1     Running   1 (5d19h ago)   10d
-kube-system        local-path-provisioner-5cf85fd84d-x54wj                       1/1     Running   1 (5d19h ago)   10d
-kube-system        metrics-server-5985cbc9d7-rrqps                               1/1     Running   1 (5d19h ago)   10d
-kube-system        svclb-grafana-29418570-h6tk4                                  1/1     Running   0               14h
-kube-system        svclb-grafana-29418570-n2lxs                                  1/1     Running   0               14h
-kube-system        svclb-grafana-29418570-q8765                                  1/1     Running   1 (5d19h ago)   10d
-kube-system        svclb-grafana-29418570-qjzch                                  1/1     Running   0               14h
-kube-system        svclb-grafana-29418570-txjdl                                  1/1     Running   0               14h
-kube-system        svclb-grafana-29418570-wp7xt                                  1/1     Running   0               14h
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-ceb964fe-8cf44   2/2     Running   2 (5d19h ago)   10d
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-ceb964fe-9d4sp   2/2     Running   0               14h
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-ceb964fe-b72g6   2/2     Running   0               14h
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-ceb964fe-fbgdt   2/2     Running   0               14h
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-ceb964fe-fpsmv   2/2     Running   0               14h
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-ceb964fe-zgp4q   2/2     Running   0               14h
-kube-system        svclb-prometheus-k8s-8422cafd-25bw4                           2/2     Running   2 (5d19h ago)   10d
-kube-system        svclb-prometheus-k8s-8422cafd-67v56                           2/2     Running   0               14h
-kube-system        svclb-prometheus-k8s-8422cafd-7fw4b                           2/2     Running   0               14h
-kube-system        svclb-prometheus-k8s-8422cafd-b2tk7                           2/2     Running   0               14h
-kube-system        svclb-prometheus-k8s-8422cafd-qj29r                           2/2     Running   0               14h
-kube-system        svclb-prometheus-k8s-8422cafd-xl7gd                           2/2     Running   0               14h
-kube-system        sync-daemon-5mml9                                             1/1     Running   0               14h
-kube-system        sync-daemon-7pfgq                                             1/1     Running   0               14h
-kube-system        sync-daemon-9rpzg                                             1/1     Running   0               14h
-kube-system        sync-daemon-f2789                                             1/1     Running   0               14h
-kube-system        sync-daemon-pqkcs                                             1/1     Running   0               14h
-kube-system        sync-daemon-w9mgg                                             1/1     Running   1 (5d19h ago)   10d
-migration-system   migration-controller-manager-5c79b44b9-5xs7b                  1/1     Running   1 (5d19h ago)   10d
-migration-system   v2v-helper-pf9-test-01-v9424                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-02-qpgnr                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-03-rvkkf                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-04-6ss7x                                  1/1     Running   0               5d
-migration-system   v2v-helper-pf9-test-05-p7bw6                                  1/1     Running   0               5d
-migration-system   v2v-helper-pf9-test-06-hmndn                                  1/1     Running   0               5d
-migration-system   v2v-helper-pf9-test-07-mthdx                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-08-vf5ng                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-09-gglck                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-11-g8bvs                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-12-wq8v9                                  1/1     Running   0               5d
-migration-system   v2v-helper-pf9-test-13-nhm2z                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-14-wcgtw                                  1/1     Running   0               5d
-migration-system   v2v-helper-pf9-test-21-d8zgq                                  1/1     Running   0               5d
-migration-system   v2v-helper-pf9-test-22-84nmb                                  1/1     Running   0               5d
-migration-system   v2v-helper-pf9-test-23-4ltgp                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-24-kvzv2                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-25-w2r58                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-26-99jmj                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-27-q72nw                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-28-vtkmv                                  1/1     Running   0               5d
-migration-system   v2v-helper-pf9-test-29-ws2cj                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-30-p2xhf                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-31-w48zn                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-32-b8dv6                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-34-wsdc2                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-test-35-5wtf7                                  1/1     Running   0               5d
-migration-system   v2v-helper-pf9-test-36-cxnhk                                  1/1     Running   0               14h
-migration-system   v2v-helper-pf9-testdb-mysql-03c-zx7ft                         1/1     Running   0               13h
-migration-system   v2v-helper-virtualtc-btlsd                                    1/1     Running   0               4d14h
-migration-system   v2v-helper-virtualtc-g6yz-7dmxp                               1/1     Running   0               14h
-migration-system   vjailbreak-ui-6cbb5565f8-mhl7r                                1/1     Running   1 (5d19h ago)   10d
-monitoring         alertmanager-main-0                                           2/2     Running   2 (5d19h ago)   10d
-monitoring         blackbox-exporter-86745676c9-7nh2s                            3/3     Running   3 (5d19h ago)   10d
-monitoring         grafana-7fd5f67d9c-mr27s                                      1/1     Running   1 (5d19h ago)   10d
-monitoring         kube-state-metrics-54876944d7-tcd5g                           3/3     Running   3 (5d19h ago)   10d
-monitoring         node-exporter-4fl2g                                           2/2     Running   0               14h
-monitoring         node-exporter-58r6m                                           2/2     Running   0               14h
-monitoring         node-exporter-d6zl5                                           2/2     Running   2 (5d19h ago)   10d
-monitoring         node-exporter-klgd9                                           2/2     Running   0               14h
-monitoring         node-exporter-rbjkr                                           2/2     Running   0               14h
-monitoring         node-exporter-t6np5                                           2/2     Running   0               14h
-monitoring         prometheus-adapter-784f566c54-627jd                           1/1     Running   1 (5d19h ago)   10d
-monitoring         prometheus-adapter-784f566c54-ct7fp                           1/1     Running   1 (5d19h ago)   10d
-monitoring         prometheus-k8s-0                                              2/2     Running   2 (5d19h ago)   10d
-monitoring         prometheus-operator-df65dcd6c-nd5rs                           2/2     Running   2 (5d19h ago)   10d
-nginx-ingress      nginx-ingress-ingress-nginx-controller-56cd664db9-kljpz       1/1     Running   1 (5d19h ago)   10d
+NAMESPACE          NAME                                                          READY   STATUS        RESTARTS   AGE
+kube-system        coredns-ccb96694c-qm9ts                                       1/1     Running       0          51m
+kube-system        local-path-provisioner-5cf85fd84d-g9jd9                       1/1     Running       0          51m
+kube-system        metrics-server-5985cbc9d7-cmdk2                               1/1     Running       0          51m
+kube-system        svclb-grafana-76c83ecb-rv2jp                                  1/1     Running       0          22m
+kube-system        svclb-nginx-ingress-ingress-nginx-controller-edb71cd6-fnwgj   2/2     Running       0          22m
+kube-system        svclb-prometheus-k8s-ba2b8bda-zb7gr                           2/2     Running       0          22m
+kube-system        sync-daemon-nhlxm                                             1/1     Running       0          22m
+migration-system   migration-controller-manager-668c699bb4-vgknk                 1/1     Running       0          22m
+migration-system   v2v-helper-pf9-testdb-mysql-03c-4q2kl                         1/1     Running       0          14s
+migration-system   v2v-helper-pf9-testdb-mysql-03c-n6fzt                         1/1     Terminating   0          3m54s
+migration-system   vjailbreak-ui-6ffdd6bd8d-7sxnq                                1/1     Running       0          22m
+monitoring         alertmanager-main-0                                           2/2     Running       0          21m
+monitoring         blackbox-exporter-86745676c9-hrzvh                            3/3     Running       0          22m
+monitoring         grafana-7fd5f67d9c-q9v6q                                      1/1     Running       0          22m
+monitoring         kube-state-metrics-54876944d7-nptdn                           3/3     Running       0          22m
+monitoring         node-exporter-9s5d8                                           2/2     Running       0          22m
+monitoring         prometheus-adapter-784f566c54-6tq9m                           1/1     Running       0          22m
+monitoring         prometheus-adapter-784f566c54-tdshd                           1/1     Running       0          22m
+monitoring         prometheus-k8s-0                                              2/2     Running       0          21m
+monitoring         prometheus-operator-df65dcd6c-f545c                           2/2     Running       0          22m
+nginx-ingress      nginx-ingress-ingress-nginx-controller-d8c4fbd6d-6sx2d        1/1     Running       0          22m
