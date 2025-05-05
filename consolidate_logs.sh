@@ -14,4 +14,4 @@ while read F  ; do
 done < pods.txt
 
 log_timestamp=$(date -r consolidated.log +%m%d%Y%H%M)
-cp consolidated.log consolidated-$log_timestamp.log
+cp consolidated.log consolidated-$HOSTNAME-$log_timestamp.log
