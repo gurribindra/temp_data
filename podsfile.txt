@@ -1,22 +1,20 @@
-NAMESPACE          NAME                                                          READY   STATUS        RESTARTS   AGE
-kube-system        coredns-ccb96694c-qm9ts                                       1/1     Running       0          51m
-kube-system        local-path-provisioner-5cf85fd84d-g9jd9                       1/1     Running       0          51m
-kube-system        metrics-server-5985cbc9d7-cmdk2                               1/1     Running       0          51m
-kube-system        svclb-grafana-76c83ecb-rv2jp                                  1/1     Running       0          22m
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-edb71cd6-fnwgj   2/2     Running       0          22m
-kube-system        svclb-prometheus-k8s-ba2b8bda-zb7gr                           2/2     Running       0          22m
-kube-system        sync-daemon-nhlxm                                             1/1     Running       0          22m
-migration-system   migration-controller-manager-668c699bb4-vgknk                 1/1     Running       0          22m
-migration-system   v2v-helper-pf9-testdb-mysql-03c-4q2kl                         1/1     Running       0          14s
-migration-system   v2v-helper-pf9-testdb-mysql-03c-n6fzt                         1/1     Terminating   0          3m54s
-migration-system   vjailbreak-ui-6ffdd6bd8d-7sxnq                                1/1     Running       0          22m
-monitoring         alertmanager-main-0                                           2/2     Running       0          21m
-monitoring         blackbox-exporter-86745676c9-hrzvh                            3/3     Running       0          22m
-monitoring         grafana-7fd5f67d9c-q9v6q                                      1/1     Running       0          22m
-monitoring         kube-state-metrics-54876944d7-nptdn                           3/3     Running       0          22m
-monitoring         node-exporter-9s5d8                                           2/2     Running       0          22m
-monitoring         prometheus-adapter-784f566c54-6tq9m                           1/1     Running       0          22m
-monitoring         prometheus-adapter-784f566c54-tdshd                           1/1     Running       0          22m
-monitoring         prometheus-k8s-0                                              2/2     Running       0          21m
-monitoring         prometheus-operator-df65dcd6c-f545c                           2/2     Running       0          22m
-nginx-ingress      nginx-ingress-ingress-nginx-controller-d8c4fbd6d-6sx2d        1/1     Running       0          22m
+NAMESPACE          NAME                                                          READY   STATUS    RESTARTS        AGE
+kube-system        coredns-ccb96694c-qm9ts                                       1/1     Running   1 (4h17m ago)   2d12h
+kube-system        local-path-provisioner-5cf85fd84d-g9jd9                       1/1     Running   1 (4h17m ago)   2d12h
+kube-system        metrics-server-5985cbc9d7-cmdk2                               1/1     Running   1 (4h17m ago)   2d12h
+kube-system        svclb-grafana-76c83ecb-rv2jp                                  1/1     Running   1 (4h17m ago)   2d11h
+kube-system        svclb-nginx-ingress-ingress-nginx-controller-edb71cd6-fnwgj   2/2     Running   2 (4h17m ago)   2d11h
+kube-system        svclb-prometheus-k8s-ba2b8bda-zb7gr                           2/2     Running   2 (4h17m ago)   2d11h
+kube-system        sync-daemon-nhlxm                                             1/1     Running   1 (4h17m ago)   2d11h
+migration-system   migration-controller-manager-668c699bb4-vgknk                 1/1     Running   1 (4h17m ago)   2d11h
+migration-system   vjailbreak-ui-6ffdd6bd8d-7sxnq                                1/1     Running   1 (4h17m ago)   2d11h
+monitoring         alertmanager-main-0                                           2/2     Running   2 (4h17m ago)   2d11h
+monitoring         blackbox-exporter-86745676c9-hrzvh                            3/3     Running   3 (4h17m ago)   2d11h
+monitoring         grafana-7fd5f67d9c-q9v6q                                      1/1     Running   1 (4h17m ago)   2d11h
+monitoring         kube-state-metrics-54876944d7-nptdn                           3/3     Running   3 (4h17m ago)   2d11h
+monitoring         node-exporter-9s5d8                                           2/2     Running   2 (4h17m ago)   2d11h
+monitoring         prometheus-adapter-784f566c54-6tq9m                           1/1     Running   1 (4h17m ago)   2d11h
+monitoring         prometheus-adapter-784f566c54-tdshd                           1/1     Running   1 (4h17m ago)   2d11h
+monitoring         prometheus-k8s-0                                              2/2     Running   2 (4h17m ago)   2d11h
+monitoring         prometheus-operator-df65dcd6c-f545c                           2/2     Running   2 (4h17m ago)   2d11h
+nginx-ingress      nginx-ingress-ingress-nginx-controller-d8c4fbd6d-6sx2d        1/1     Running   1 (4h17m ago)   2d11h

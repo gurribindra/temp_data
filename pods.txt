@@ -1,3 +1,1 @@
-v2v-helper-pf9-testdb-mysql-03c-4q2kl
-v2v-helper-pf9-testdb-mysql-03c-n6fzt
 migration-controller-manager-668c699bb4-vgknk
