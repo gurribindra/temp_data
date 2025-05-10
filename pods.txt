@@ -26,6 +26,7 @@ v2v-helper-pf9-test-32-b8dv6
 v2v-helper-pf9-test-34-wsdc2
 v2v-helper-pf9-test-35-5wtf7
 v2v-helper-pf9-test-36-cxnhk
-v2v-helper-pf9-testdb-mysql-01-pstkg
+v2v-helper-pf9-testdb-mysql-01-rrnk4
+v2v-helper-pf9-testdb-mysql-03c-nz4wv
 v2v-helper-virtualtc-g6yz-7dmxp
 migration-controller-manager-5c79b44b9-5xs7b
