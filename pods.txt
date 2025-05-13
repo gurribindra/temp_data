@@ -1,2 +1,2 @@
-v2v-helper-pf9-testdb-mysql-01-xrr66
+v2v-helper-pf9-test38-win01-58f4b
 migration-controller-manager-86764dfbbd-r86d5
