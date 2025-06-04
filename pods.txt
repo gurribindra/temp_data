@@ -1,3 +1,4 @@
-v2v-helper-pf9migration2-txw5h
+v2v-helper-pf9migration2-ldrz7
+v2v-helper-pf9migration4-dtms9
 v2v-helper-svr-alm-prt-01-frf4f
 migration-controller-manager-67cc8d5cf5-9krjq
