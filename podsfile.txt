@@ -1,39 +1,55 @@
-NAMESPACE          NAME                                                              READY   STATUS      RESTARTS   AGE
-kube-system        coredns-ccb96694c-446vq                                           1/1     Running     0          4h6m
-kube-system        local-path-provisioner-5cf85fd84d-mfmr8                           1/1     Running     0          4h6m
-kube-system        metrics-server-5985cbc9d7-skb4s                                   1/1     Running     0          4h6m
-kube-system        svclb-grafana-a8b810c2-h4mw4                                      1/1     Running     0          4h3m
-kube-system        svclb-grafana-a8b810c2-rsklr                                      1/1     Running     0          146m
-kube-system        svclb-grafana-a8b810c2-tj22g                                      1/1     Running     0          146m
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-f0af36bb-mtt8k       2/2     Running     0          146m
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-f0af36bb-n4qrc       2/2     Running     0          4h3m
-kube-system        svclb-nginx-ingress-ingress-nginx-controller-f0af36bb-shw89       2/2     Running     0          146m
-kube-system        svclb-prometheus-k8s-052b343d-mvh8s                               2/2     Running     0          146m
-kube-system        svclb-prometheus-k8s-052b343d-q2dhn                               2/2     Running     0          146m
-kube-system        svclb-prometheus-k8s-052b343d-wk6l5                               2/2     Running     0          4h3m
-kube-system        sync-daemon-fpf58                                                 1/1     Running     0          146m
-kube-system        sync-daemon-g5j25                                                 1/1     Running     0          4h3m
-kube-system        sync-daemon-gx2zq                                                 1/1     Running     0          146m
-migration-system   migration-controller-manager-58b5cc45d6-5v4gw                     1/1     Running     0          4h3m
-migration-system   v2v-helper-anawebui02-71ju-pq5kb                                  0/1     Completed   0          3h42m
-migration-system   v2v-helper-esdweb2.alm.mentorg.com-gbvmn                          0/1     Completed   0          3h44m
-migration-system   v2v-helper-flex-u22-04-08tx-4n2t6                                 1/1     Running     0          115m
-migration-system   v2v-helper-flex-u22-05-buqb-nkdwb                                 1/1     Running     0          116m
-migration-system   v2v-helper-flex-u22-06-i8lt-lk25q                                 0/1     Completed   0          116m
-migration-system   v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d17308r8c2   0/1     OOMKilled   0          3h30m
-migration-system   v2v-helper-slab-serv-01.alm.mentorg.com-rxv7n                     0/1     Error       0          37m
-migration-system   v2v-helper-slab-u1604-build3.alm.mentorg.com-6284f                1/1     Running     0          112m
-migration-system   v2v-helper-win10-wkstn-01-b9kqm                                   1/1     Running     0          170m
-migration-system   vjailbreak-ui-b875ccfd6-4hzjb                                     1/1     Running     0          4h3m
-monitoring         alertmanager-main-0                                               2/2     Running     0          4h2m
-monitoring         blackbox-exporter-86745676c9-h9nfz                                3/3     Running     0          4h3m
-monitoring         grafana-7fd5f67d9c-vf2qv                                          1/1     Running     0          4h3m
-monitoring         kube-state-metrics-54876944d7-5p9jt                               3/3     Running     0          4h3m
-monitoring         node-exporter-46qfc                                               2/2     Running     0          146m
-monitoring         node-exporter-9qr2t                                               2/2     Running     0          4h3m
-monitoring         node-exporter-njtn2                                               2/2     Running     0          146m
-monitoring         prometheus-adapter-784f566c54-8lz9z                               1/1     Running     0          4h3m
-monitoring         prometheus-adapter-784f566c54-s8mk2                               1/1     Running     0          4h3m
-monitoring         prometheus-k8s-0                                                  2/2     Running     0          4h2m
-monitoring         prometheus-operator-df65dcd6c-ztzlj                               2/2     Running     0          4h3m
-nginx-ingress      nginx-ingress-ingress-nginx-controller-7bbfb99f87-mx8rz           1/1     Running     0          4h3m
+NAMESPACE          NAME                                                              READY   STATUS      RESTARTS      AGE
+kube-system        coredns-ccb96694c-446vq                                           1/1     Running     1 (44h ago)   3d16h
+kube-system        local-path-provisioner-5cf85fd84d-mfmr8                           1/1     Running     1 (44h ago)   3d16h
+kube-system        metrics-server-5985cbc9d7-skb4s                                   1/1     Running     1 (44h ago)   3d16h
+kube-system        svclb-grafana-a8b810c2-gp7dm                                      1/1     Running     0             79m
+kube-system        svclb-grafana-a8b810c2-h4mw4                                      1/1     Running     1 (44h ago)   3d16h
+kube-system        svclb-grafana-a8b810c2-lhfgp                                      1/1     Running     0             2d1h
+kube-system        svclb-grafana-a8b810c2-tf6vz                                      1/1     Running     0             44h
+kube-system        svclb-nginx-ingress-ingress-nginx-controller-f0af36bb-d27h9       2/2     Running     0             2d1h
+kube-system        svclb-nginx-ingress-ingress-nginx-controller-f0af36bb-fz88d       2/2     Running     0             44h
+kube-system        svclb-nginx-ingress-ingress-nginx-controller-f0af36bb-n4qrc       2/2     Running     2 (44h ago)   3d16h
+kube-system        svclb-nginx-ingress-ingress-nginx-controller-f0af36bb-r4fc8       2/2     Running     0             79m
+kube-system        svclb-prometheus-k8s-052b343d-mj5mv                               2/2     Running     0             2d1h
+kube-system        svclb-prometheus-k8s-052b343d-pf7ln                               2/2     Running     0             79m
+kube-system        svclb-prometheus-k8s-052b343d-phmqt                               2/2     Running     0             44h
+kube-system        svclb-prometheus-k8s-052b343d-wk6l5                               2/2     Running     2 (44h ago)   3d16h
+kube-system        sync-daemon-87hls                                                 1/1     Running     0             79m
+kube-system        sync-daemon-fjmls                                                 1/1     Running     0             44h
+kube-system        sync-daemon-g5j25                                                 1/1     Running     1 (44h ago)   3d16h
+kube-system        sync-daemon-gxs2l                                                 1/1     Running     0             2d1h
+migration-system   migration-controller-manager-58b5cc45d6-5v4gw                     1/1     Running     1 (44h ago)   3d16h
+migration-system   v2v-helper-ana-2025-1-testing-43ps-2t29r                          0/1     Error       0             9h
+migration-system   v2v-helper-analyzer-docker-01-jzus-qbb22                          1/1     Running     0             3m23s
+migration-system   v2v-helper-anawebui02-71ju-pq5kb                                  0/1     Completed   0             3d16h
+migration-system   v2v-helper-esdsql2.alm.mentorg.com-6wtjl                          0/1     Completed   0             130m
+migration-system   v2v-helper-esdweb2.alm.mentorg.com-gbvmn                          0/1     Completed   0             3d16h
+migration-system   v2v-helper-flex-u22-05-buqb-nkdwb                                 0/1     Completed   0             3d14h
+migration-system   v2v-helper-flex-u22-20-fqui-chsv5                                 0/1     Completed   0             101m
+migration-system   v2v-helper-mel-u18-64-1-t5qz-hw9xc                                0/1     Error       0             92m
+migration-system   v2v-helper-mel-u18-64-2-p9al-s8mqk                                0/1     Completed   0             92m
+migration-system   v2v-helper-mel-u18-64-3-xuhb-gb747                                0/1     Completed   0             92m
+migration-system   v2v-helper-mel-u18-64-4-wpst-7dkqw                                1/1     Running     0             92m
+migration-system   v2v-helper-mel-u18-64-5-n5ti-rwlp6                                0/1     Completed   0             92m
+migration-system   v2v-helper-mel-u18-64-8-zknf-r8wcr                                0/1     Error       0             47h
+migration-system   v2v-helper-nu-elm-u20-04-rs9s-4fw2w                               0/1     Error       0             2d
+migration-system   v2v-helper-omni-d11x64-1-qn3r-nlcqd                               0/1     Error       0             2d
+migration-system   v2v-helper-rel-bld-machine-l1cm-gw7d8                             0/1     Error       0             47h
+migration-system   v2v-helper-sb-u1804-misc01-92871316-93d7-422b-a73a-892b521vwddg   0/1     Error       0             43h
+migration-system   v2v-helper-shoeleather.alm.mentorg.com-glrnt                      0/1     Error       0             2d13h
+migration-system   v2v-helper-u22-64-docker-l5nc-xrgz6                               1/1     Running     0             14m
+migration-system   v2v-helper-win10-wkstn-01-b9kqm                                   0/1     Completed   0             3d15h
+migration-system   vjailbreak-ui-b875ccfd6-4hzjb                                     1/1     Running     1 (44h ago)   3d16h
+monitoring         alertmanager-main-0                                               2/2     Running     2 (44h ago)   3d16h
+monitoring         blackbox-exporter-86745676c9-h9nfz                                3/3     Running     3 (44h ago)   3d16h
+monitoring         grafana-7fd5f67d9c-vf2qv                                          1/1     Running     1 (44h ago)   3d16h
+monitoring         kube-state-metrics-54876944d7-5p9jt                               3/3     Running     3 (44h ago)   3d16h
+monitoring         node-exporter-9qr2t                                               2/2     Running     2 (44h ago)   3d16h
+monitoring         node-exporter-ftlwq                                               2/2     Running     0             44h
+monitoring         node-exporter-xttnb                                               2/2     Running     0             2d1h
+monitoring         node-exporter-zg4hh                                               2/2     Running     0             79m
+monitoring         prometheus-adapter-784f566c54-8lz9z                               1/1     Running     1 (44h ago)   3d16h
+monitoring         prometheus-adapter-784f566c54-s8mk2                               1/1     Running     1 (44h ago)   3d16h
+monitoring         prometheus-k8s-0                                                  2/2     Running     2 (44h ago)   3d16h
+monitoring         prometheus-operator-df65dcd6c-ztzlj                               2/2     Running     2 (44h ago)   3d16h
+nginx-ingress      nginx-ingress-ingress-nginx-controller-7bbfb99f87-mx8rz           1/1     Running     1 (44h ago)   3d16h
