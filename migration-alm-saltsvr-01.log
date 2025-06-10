@@ -1,0 +1,546 @@
+[2025-06-10T04:06:10Z] -----	 Migration started at 2025-06-10T04:06:10Z for VM alm-saltsvr-01 -----
+[2025-06-10T04:06:10Z] Running in pod
+[2025-06-10T04:06:11Z] Connected to vCenter: alm-vc-01.alm.mentorg.com
+
+[2025-06-10T04:06:13Z] Connected to OpenStack
+[2025-06-10T04:06:13Z] VCenter Thumbprint: ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+
+[2025-06-10T04:06:14Z] Creating volumes in OpenStack
+[2025-06-10T19:31:11Z] -----	 Migration started at 2025-06-10T19:31:11Z for VM alm-saltsvr-01 -----
+[2025-06-10T19:31:11Z] Running in pod
+[2025-06-10T19:31:12Z] Connected to vCenter: alm-vc-01.alm.mentorg.com
+
+[2025-06-10T19:31:15Z] Connected to OpenStack
+[2025-06-10T19:31:15Z] VCenter Thumbprint: ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+
+[2025-06-10T19:31:15Z] Creating volumes in OpenStack
+[2025-06-10T19:31:30Z] Volumes created successfully
+[2025-06-10T19:31:30Z] CBT Enabled: true
+[2025-06-10T19:31:31Z] Starting NBD server
+[2025-06-10T19:31:31Z] Copying disk 0, Completed: 0%
+[2025-06-10T19:31:31Z] Debug mode enabled. Command output will be logged to /var/log/pf9/migration-alm-saltsvr-01.log
+[2025-06-10T19:31:31Z] Executing nbdkit --exit-with-parent --readonly --foreground --unix=/tmp/nbdkit-3037433245/nbdkit.sock --pidfile=/tmp/nbdkit-3037433245/nbdkit.pid --verbose -D vddk.datapath=0 -D nbdkit.backend.datapath=0 vddk libdir=/home/fedora/vmware-vix-disklib-distrib server=alm-vc-01.alm.mentorg.com user=svc_vcenter password=[REDACTED] thumbprint=ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6 compression=fastlz config=/home/fedora/vddk.conf transports=file:nbdssl:nbd vm=moref=vm-10884 snapshot=snapshot-19417 [sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk 
+
+nbdkit: debug: nbdkit 1.42.3 (nbdkit-1.42.3-1.fc42)
+nbdkit: debug: TLS disabled: could not load TLS certificates
+nbdkit: debug: service mode: unix socket
+nbdkit: debug: NBD URI: nbd+unix://?socket=/tmp/nbdkit-3037433245/nbdkit.sock
+nbdkit: debug: registering plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so
+nbdkit: debug: registered plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so (name vddk)
+nbdkit: debug: vddk: load
+nbdkit: warning: debug flag -D  nbdkit.backend.datapath was not used
+nbdkit: warning: debug flag -D  vddk.datapath was not used
+nbdkit: debug: vddk: config key=libdir, value=/home/fedora/vmware-vix-disklib-distrib
+nbdkit: debug: vddk: config key=server, value=alm-vc-01.alm.mentorg.com
+nbdkit: debug: vddk: config key=user, value=svc_vcenter
+nbdkit: debug: vddk: config key=password, value=}[RecUFF::J6}[FsXRayE\\z=9
+nbdkit: debug: vddk: config key=thumbprint, value=ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+nbdkit: debug: vddk: config key=compression, value=fastlz
+nbdkit: debug: vddk: config key=config, value=/home/fedora/vddk.conf
+nbdkit: debug: vddk: config key=transports, value=file:nbdssl:nbd
+nbdkit: debug: vddk: config key=vm, value=moref=vm-10884
+nbdkit: debug: vddk: config key=snapshot, value=snapshot-19417
+nbdkit: debug: vddk: config key=file, value=[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk
+nbdkit: debug: vddk: config_complete
+nbdkit: debug: using thread model: parallel
+nbdkit: debug: vddk: get_ready
+nbdkit: debug: original command line occupies 571 bytes
+nbdkit: debug: adding reexeced_=
+nbdkit: debug: re-executing with updated LD_LIBRARY_PATH=/home/fedora/vmware-vix-disklib-distrib/lib64
+nbdkit: debug: nbdkit 1.42.3 (nbdkit-1.42.3-1.fc42)
+nbdkit: debug: TLS disabled: could not load TLS certificates
+nbdkit: debug: service mode: unix socket
+nbdkit: debug: NBD URI: nbd+unix://?socket=/tmp/nbdkit-3037433245/nbdkit.sock
+nbdkit: debug: registering plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so
+nbdkit: debug: registered plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so (name vddk)
+nbdkit: debug: vddk: load
+nbdkit: warning: debug flag -D  nbdkit.backend.datapath was not used
+nbdkit: warning: debug flag -D  vddk.datapath was not used
+nbdkit: debug: vddk: config key=libdir, value=/home/fedora/vmware-vix-disklib-distrib
+nbdkit: debug: vddk: config key=server, value=alm-vc-01.alm.mentorg.com
+nbdkit: debug: vddk: config key=user, value=svc_vcenter
+nbdkit: debug: vddk: config key=thumbprint, value=ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+nbdkit: debug: vddk: config key=compression, value=fastlz
+nbdkit: debug: vddk: config key=config, value=/home/fedora/vddk.conf
+nbdkit: debug: vddk: config key=transports, value=file:nbdssl:nbd
+nbdkit: debug: vddk: config key=vm, value=moref=vm-10884
+nbdkit: debug: vddk: config key=snapshot, value=snapshot-19417
+nbdkit: debug: vddk: config key=file, value=[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk
+nbdkit: debug: vddk: config key=password, value=-3
+nbdkit: debug: vddk: config key=reexeced_, value=
+nbdkit: debug: vddk: config_complete
+nbdkit: debug: cleaning up after re-exec
+nbdkit: debug: using thread model: parallel
+nbdkit: debug: vddk: get_ready
+nbdkit: debug: bound to unix socket /tmp/nbdkit-3037433245/nbdkit.sock
+nbdkit: debug: written pidfile /tmp/nbdkit-3037433245/nbdkit.pid
+nbdkit: debug: vddk: after_fork
+nbdkit: debug: VDDK call: VixDiskLib_InitEx (6, 5, &debug_fn, &error_fn, &error_fn, /home/fedora/vmware-vix-disklib-distrib, /home/fedora/vddk.conf)
+nbdkit: debug: OBJLIB-LIB: Objlib initialized.
+nbdkit: debug: VixDiskLib: Attempting to locate advanced transport module in "/home/fedora/vmware-vix-disklib-distrib".
+nbdkit: debug: VixDiskLib: Advanced transport plugin /home/fedora/vmware-vix-disklib-distrib/lib64/libdiskLibPlugin.so was successfully loaded into vixDiskLib.
+nbdkit: debug: VixDiskLib: Enabling advanced transport modes.
+nbdkit: debug: 2025-06-10T19:31:32.090Z trivia -[00032] [Originator@6876 sub=ThreadPool] Thread enlisted
+nbdkit: debug: 2025-06-10T19:31:32.090Z info -[00032] [Originator@6876 sub=ThreadPool] Entering IO thread loop
+nbdkit: debug: DictionaryLoad: Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /etc/vmware/config. Using default values.
+nbdkit: debug: 2025-06-10T19:31:32.090Z trivia -[00030] [Originator@6876 sub=ThreadPool] Thread enlisted
+nbdkit: debug: 2025-06-10T19:31:32.090Z info -[00030] [Originator@6876 sub=ThreadPool] Entering worker thread loop
+nbdkit: debug: DictionaryLoad: Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /usr/lib/vmware/settings. Using default values.
+nbdkit: debug: DictionaryLoad: Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /usr/lib/vmware/config. Using default values.
+nbdkit: debug: DictionaryLoad: Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /root/.vmware/config. Using default values.
+nbdkit: debug: DictionaryLoad: Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /root/.vmware/preferences. Using default values.
+nbdkit: debug: 2025-06-10T19:31:32.090Z trivia -[00033] [Originator@6876 sub=ThreadPool] Thread enlisted
+nbdkit: debug: 2025-06-10T19:31:32.090Z info -[00033] [Originator@6876 sub=ThreadPool] Entering fair thread loop
+nbdkit: debug: lib/ssl: OpenSSL using default provider
+nbdkit: debug: lib/ssl: Client usage
+nbdkit: debug: lib/ssl: protocol list tls1.2
+nbdkit: debug: lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: lib/ssl: Server usage
+nbdkit: debug: lib/ssl: protocol list tls1.2
+nbdkit: debug: lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: VixDiskLib: Initialize transport modes.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC connection accept timeout: 180000 milliseconds
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC request timeout: 180000 milliseconds
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC read timeout: 60000 milliseconds
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC write timeout: 600000 milliseconds
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC fssrvr request timeout: 0 milliseconds
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC fssrvr write timeout: 0 milliseconds
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC max recv retries: 1
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /etc/vmware/config. Using default values.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /usr/lib/vmware/settings. Using default values.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /usr/lib/vmware/config. Using default values.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /root/.vmware/config. Using default values.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /root/.vmware/preferences. Using default values.
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: OpenSSL using default provider
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: Client usage
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: 2025-06-10T19:31:32.227Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: 2025-06-10T19:31:32.228Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: Server usage
+nbdkit: debug: 2025-06-10T19:31:32.228Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2
+nbdkit: debug: 2025-06-10T19:31:32.228Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: 2025-06-10T19:31:32.228Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: 2025-06-10T19:31:32.228Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: 2025-06-10T19:31:32.228Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: 2025-06-10T19:31:32.228Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: 2025-06-10T19:31:32.354Z info -[00026] [Originator@6876 sub=Libs] [NFC INFO]Nfc_Init: Poll not initialized.
+nbdkit: debug: VixDiskLib: Available transport modes: file:san:hotadd:nbdssl:nbd.
+nbdkit: debug: VMware VixDiskLib (8.0.3) Release build-23950268
+nbdkit: debug: VixDiskLib: PhoneHome is disabled.
+[2025-06-10T19:31:33Z] Attaching volumes to VM
+[2025-06-10T19:31:36Z] Waiting for volume attachment
+[2025-06-10T19:32:21Z] Executing /usr/sbin/nbdcopy --progress=3 --target-is-zero nbd+unix:///?socket=/tmp/nbdkit-3037433245/nbdkit.sock /dev/vdb
+
+[2025-06-10T19:32:21Z] Debug mode enabled. Command output will be logged to /var/log/pf9/migration-alm-saltsvr-01.log
+nbdkit: debug: accepted connection
+nbdkit: vddk[1]: debug: vddk: preconnect
+nbdkit: vddk[1]: debug: newstyle negotiation: flags: global 0x3
+nbdkit: vddk[1]: debug: newstyle negotiation: client flags: 0x3
+nbdkit: vddk[1]: debug: replying to NBD_OPT_EXTENDED_HEADERS with NBD_REP_ERR_UNSUP
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_STRUCTURED_REPLY: client requested structured replies
+nbdkit: vddk[1]: debug: replying to NBD_OPT_STRUCTURED_REPLY with NBD_REP_ACK
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: client requested export ''
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: set count: 1
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: set base:allocation
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: replying with base:allocation id 1
+nbdkit: vddk[1]: debug: replying to NBD_OPT_SET_META_CONTEXT with NBD_REP_ACK
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: reply complete
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_GO: client requested export ''
+nbdkit: vddk[1]: debug: vddk: open readonly=1 exportname="" tls=0
+nbdkit: vddk[1]: debug: vddk: default_export readonly=1 tls=0
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_AllocateConnectParams ()
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_ConnectEx (h->params, 1, snapshot-19417, file:nbdssl:nbd, &connection)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_ConnectEx: Establish connection using file:nbdssl:nbd.
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLibConnectInt: Establish connection.
+nbdkit: vddk[1]: debug: VixDiskLib: Resolve host.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_Open (connection, [sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk, 36, &handle)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_OpenEx: Open disk '[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk'.
+nbdkit: vddk[1]: debug: NBD_ClientOpen: attempting to create connection to FASTLZ-vpxa-nfcssl://[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk@esx-01.alm.mentorg.com:902!52 23 fc 6e 71 48 48 c1-ac 00 43 74 3c e6 37 33
+nbdkit: vddk[1]: debug: NfcAioOpenSession: the socket options client snd buffer size 87040,           rcv buffer size 131072.
+nbdkit: vddk[1]: debug: NfcAioOpenSession: the socket options server snd buffer size 586250,           rcv buffer size 586250.
+nbdkit: vddk[1]: debug: Opening file [sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk (FASTLZ-vpxa-nfcssl://[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk@esx-01.alm.mentorg.com:902!52 23 fc 6e 71 48 48 c1-ac 00 43 74 3c e6 37 33)
+nbdkit: vddk[1]: debug: Nbd_ClientSetCallback: Set callback on '[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk' with type 0.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_GetTransportMode (handle)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_GetTransportMode: Retrieve transport mode.
+nbdkit: vddk[1]: debug: transport mode: nbdssl
+nbdkit: vddk[1]: debug: vddk: open returned handle 0x7f67d4001a30
+nbdkit: vddk[1]: debug: vddk: prepare readonly=1
+nbdkit: vddk[1]: debug: vddk: get_size
+nbdkit: debug: VDDK call: VixDiskLib_GetInfo (handle, info)
+nbdkit: debug: VixDiskLib: VixDiskLib_GetInfo: Retrieve disk info.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_FreeInfo (info)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeInfo: Clean up VixDiskLib.
+nbdkit: vddk[1]: debug: vddk: can_zero
+nbdkit: vddk[1]: debug: vddk: can_fast_zero
+nbdkit: vddk[1]: debug: vddk: can_trim
+nbdkit: vddk[1]: debug: vddk: can_fua
+nbdkit: vddk[1]: debug: vddk: can_flush
+nbdkit: vddk[1]: debug: vddk: is_rotational
+nbdkit: vddk[1]: debug: vddk: can_multi_conn
+nbdkit: vddk[1]: debug: vddk: can_cache
+nbdkit: vddk[1]: debug: vddk: can_extents
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 0, 128 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk[1]: debug: newstyle negotiation: flags: export 0x87
+nbdkit: vddk[1]: debug: vddk: block_size
+nbdkit: debug: VDDK call: VixDiskLib_GetInfo (handle, info)
+nbdkit: debug: VixDiskLib: VixDiskLib_GetInfo: Retrieve disk info.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_FreeInfo (info)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeInfo: Clean up VixDiskLib.
+nbdkit: vddk[1]: debug: replying to NBD_OPT_GO with NBD_REP_ACK
+nbdkit: vddk[1]: debug: handshake complete, processing requests with 16 threads
+nbdcopy: error: destination size (167503724544) is smaller than source size (167772160000)
+nbdkit: debug: starting worker thread vddk.0
+nbdkit: debug: starting worker thread vddk.1
+nbdkit: debug: starting worker thread vddk.2
+nbdkit: debug: starting worker thread vddk.3
+nbdkit: debug: starting worker thread vddk.4
+nbdkit: debug: starting worker thread vddk.6
+nbdkit: debug: starting worker thread vddk.5
+nbdkit: debug: starting worker thread vddk.7
+nbdkit: debug: starting worker thread vddk.8
+nbdkit: debug: starting worker thread vddk.9
+nbdkit: debug: starting worker thread vddk.10
+nbdkit: debug: starting worker thread vddk.11
+nbdkit: vddk.0: debug: client closed input socket, closing connection
+nbdkit: debug: starting worker thread vddk.12
+nbdkit: vddk.12: debug: exiting worker thread vddk.12
+nbdkit: debug: starting worker thread vddk.13
+nbdkit: vddk.13: debug: exiting worker thread vddk.13
+nbdkit: debug: starting worker thread vddk.14
+nbdkit: vddk.1: debug: exiting worker thread vddk.1
+nbdkit: vddk.0: debug: exiting worker thread vddk.0
+nbdkit: debug: starting worker thread vddk.15
+nbdkit: vddk.15: debug: exiting worker thread vddk.15
+nbdkit: vddk.2: debug: exiting worker thread vddk.2
+nbdkit: vddk.3: debug: exiting worker thread vddk.3
+nbdkit: vddk.14: debug: exiting worker thread vddk.14
+[2025-06-10T19:32:24Z] failed to live replicate disks: failed to copy disk: failed to run nbdcopy: exec: already started. Trying to perform cleanup
+nbdkit: vddk.4: debug: exiting worker thread vddk.4
+nbdkit: vddk.6: debug: exiting worker thread vddk.6
+nbdkit: vddk.7: debug: exiting worker thread vddk.7
+nbdkit: vddk.8: debug: exiting worker thread vddk.8
+nbdkit: vddk.5: debug: exiting worker thread vddk.5
+nbdkit: vddk.9: debug: exiting worker thread vddk.9
+nbdkit: vddk.10: debug: exiting worker thread vddk.10
+nbdkit: vddk.11: debug: exiting worker thread vddk.11
+nbdkit: vddk[1]: debug: vddk: finalize
+nbdkit: vddk[1]: debug: vddk: close
+nbdkit: debug: VDDK call: VixDiskLib_Wait (handle)
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_Close (handle)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_Close: Close disk '[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk'.
+nbdkit: vddk[1]: debug: VixDiskLib: Disk Open Time: 499 milliseconds. 
+nbdkit: vddk[1]: debug: VixDiskLib: Disk Close Time: 4 milliseconds. 
+nbdkit: vddk[1]: debug: VixDiskLib: Disk IO Time: 0 milliseconds. 
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_Disconnect (connection)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_Disconnect: Disconnect.
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeConnectParams: Free connection parameters.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_FreeConnectParams (params)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeConnectParams: Free connection parameters.
+[2025-06-10T19:32:34Z] Volume Hard disk 1 deleted
+
+[2025-06-10T19:32:35Z] Failed to migrate VM: failed to live replicate disks: failed to copy disk: failed to run nbdcopy: exec: already started
+VM alm-saltsvr-01 was powered on after migration failure
+[2025-06-10T19:36:13Z] -----	 Migration started at 2025-06-10T19:36:13Z for VM alm-saltsvr-01 -----
+[2025-06-10T19:36:13Z] Running in pod
+[2025-06-10T19:36:14Z] Connected to vCenter: alm-vc-01.alm.mentorg.com
+
+[2025-06-10T19:36:16Z] Connected to OpenStack
+[2025-06-10T19:36:17Z] VCenter Thumbprint: ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+
+[2025-06-10T19:36:17Z] Creating volumes in OpenStack
+[2025-06-10T19:36:33Z] Volumes created successfully
+[2025-06-10T19:36:33Z] CBT Enabled: true
+[2025-06-10T19:36:34Z] Starting NBD server
+[2025-06-10T19:36:34Z] Copying disk 0, Completed: 0%
+[2025-06-10T19:36:34Z] Debug mode enabled. Command output will be logged to /var/log/pf9/migration-alm-saltsvr-01.log
+[2025-06-10T19:36:34Z] Executing nbdkit --exit-with-parent --readonly --foreground --unix=/tmp/nbdkit-2590043116/nbdkit.sock --pidfile=/tmp/nbdkit-2590043116/nbdkit.pid --verbose -D vddk.datapath=0 -D nbdkit.backend.datapath=0 vddk libdir=/home/fedora/vmware-vix-disklib-distrib server=alm-vc-01.alm.mentorg.com user=svc_vcenter password=[REDACTED] thumbprint=ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6 compression=fastlz config=/home/fedora/vddk.conf transports=file:nbdssl:nbd vm=moref=vm-10884 snapshot=snapshot-19420 [sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk 
+
+nbdkit: debug: nbdkit 1.42.3 (nbdkit-1.42.3-1.fc42)
+nbdkit: debug: TLS disabled: could not load TLS certificates
+nbdkit: debug: service mode: unix socket
+nbdkit: debug: NBD URI: nbd+unix://?socket=/tmp/nbdkit-2590043116/nbdkit.sock
+nbdkit: debug: registering plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so
+nbdkit: debug: registered plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so (name vddk)
+nbdkit: debug: vddk: load
+nbdkit: warning: debug flag -D  nbdkit.backend.datapath was not used
+nbdkit: warning: debug flag -D  vddk.datapath was not used
+nbdkit: debug: vddk: config key=libdir, value=/home/fedora/vmware-vix-disklib-distrib
+nbdkit: debug: vddk: config key=server, value=alm-vc-01.alm.mentorg.com
+nbdkit: debug: vddk: config key=user, value=svc_vcenter
+nbdkit: debug: vddk: config key=password, value=}[RecUFF::J6}[FsXRayE\\z=9
+nbdkit: debug: vddk: config key=thumbprint, value=ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+nbdkit: debug: vddk: config key=compression, value=fastlz
+nbdkit: debug: vddk: config key=config, value=/home/fedora/vddk.conf
+nbdkit: debug: vddk: config key=transports, value=file:nbdssl:nbd
+nbdkit: debug: vddk: config key=vm, value=moref=vm-10884
+nbdkit: debug: vddk: config key=snapshot, value=snapshot-19420
+nbdkit: debug: vddk: config key=file, value=[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk
+nbdkit: debug: vddk: config_complete
+nbdkit: debug: using thread model: parallel
+nbdkit: debug: vddk: get_ready
+nbdkit: debug: original command line occupies 571 bytes
+nbdkit: debug: adding reexeced_=
+nbdkit: debug: re-executing with updated LD_LIBRARY_PATH=/home/fedora/vmware-vix-disklib-distrib/lib64
+nbdkit: debug: nbdkit 1.42.3 (nbdkit-1.42.3-1.fc42)
+nbdkit: debug: TLS disabled: could not load TLS certificates
+nbdkit: debug: service mode: unix socket
+nbdkit: debug: NBD URI: nbd+unix://?socket=/tmp/nbdkit-2590043116/nbdkit.sock
+nbdkit: debug: registering plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so
+nbdkit: debug: registered plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so (name vddk)
+nbdkit: debug: vddk: load
+nbdkit: warning: debug flag -D  nbdkit.backend.datapath was not used
+nbdkit: warning: debug flag -D  vddk.datapath was not used
+nbdkit: debug: vddk: config key=libdir, value=/home/fedora/vmware-vix-disklib-distrib
+nbdkit: debug: vddk: config key=server, value=alm-vc-01.alm.mentorg.com
+nbdkit: debug: vddk: config key=user, value=svc_vcenter
+nbdkit: debug: vddk: config key=thumbprint, value=ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+nbdkit: debug: vddk: config key=compression, value=fastlz
+nbdkit: debug: vddk: config key=config, value=/home/fedora/vddk.conf
+nbdkit: debug: vddk: config key=transports, value=file:nbdssl:nbd
+nbdkit: debug: vddk: config key=vm, value=moref=vm-10884
+nbdkit: debug: vddk: config key=snapshot, value=snapshot-19420
+nbdkit: debug: vddk: config key=file, value=[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk
+nbdkit: debug: vddk: config key=password, value=-3
+nbdkit: debug: vddk: config key=reexeced_, value=
+nbdkit: debug: vddk: config_complete
+nbdkit: debug: cleaning up after re-exec
+nbdkit: debug: using thread model: parallel
+nbdkit: debug: vddk: get_ready
+nbdkit: debug: bound to unix socket /tmp/nbdkit-2590043116/nbdkit.sock
+nbdkit: debug: written pidfile /tmp/nbdkit-2590043116/nbdkit.pid
+nbdkit: debug: vddk: after_fork
+nbdkit: debug: VDDK call: VixDiskLib_InitEx (6, 5, &debug_fn, &error_fn, &error_fn, /home/fedora/vmware-vix-disklib-distrib, /home/fedora/vddk.conf)
+nbdkit: debug: OBJLIB-LIB: Objlib initialized.
+nbdkit: debug: VixDiskLib: Attempting to locate advanced transport module in "/home/fedora/vmware-vix-disklib-distrib".
+nbdkit: debug: VixDiskLib: Advanced transport plugin /home/fedora/vmware-vix-disklib-distrib/lib64/libdiskLibPlugin.so was successfully loaded into vixDiskLib.
+nbdkit: debug: VixDiskLib: Enabling advanced transport modes.
+nbdkit: debug: 2025-06-10T19:36:34.473Z trivia -[00032] [Originator@6876 sub=ThreadPool] Thread enlisted
+nbdkit: debug: 2025-06-10T19:36:34.473Z info -[00032] [Originator@6876 sub=ThreadPool] Entering IO thread loop
+nbdkit: debug: DictionaryLoad: Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.473Z trivia -[00031] [Originator@6876 sub=ThreadPool] Thread enlisted
+nbdkit: debug: PREF Optional preferences file not found at /etc/vmware/config. Using default values.
+nbdkit: debug: 2025-06-10T19:36:34.474Z info -[00031] [Originator@6876 sub=ThreadPool] Entering IO thread loop
+nbdkit: debug: DictionaryLoad: Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /usr/lib/vmware/settings. Using default values.
+nbdkit: debug: DictionaryLoad: Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /usr/lib/vmware/config. Using default values.
+nbdkit: debug: DictionaryLoad: Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /root/.vmware/config. Using default values.
+nbdkit: debug: 2025-06-10T19:36:34.473Z trivia -[00033] [Originator@6876 sub=ThreadPool] Thread enlisted
+nbdkit: debug: DictionaryLoad: Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /root/.vmware/preferences. Using default values.
+nbdkit: debug: 2025-06-10T19:36:34.474Z info -[00033] [Originator@6876 sub=ThreadPool] Entering fair thread loop
+nbdkit: debug: lib/ssl: OpenSSL using default provider
+nbdkit: debug: lib/ssl: Client usage
+nbdkit: debug: lib/ssl: protocol list tls1.2
+nbdkit: debug: lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: lib/ssl: Server usage
+nbdkit: debug: lib/ssl: protocol list tls1.2
+nbdkit: debug: lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: VixDiskLib: Initialize transport modes.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC connection accept timeout: 180000 milliseconds
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC request timeout: 180000 milliseconds
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC read timeout: 60000 milliseconds
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC write timeout: 600000 milliseconds
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC fssrvr request timeout: 0 milliseconds
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC fssrvr write timeout: 0 milliseconds
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC max recv retries: 1
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /etc/vmware/config. Using default values.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /usr/lib/vmware/settings. Using default values.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /usr/lib/vmware/config. Using default values.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /root/.vmware/config. Using default values.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /root/.vmware/preferences. Using default values.
+nbdkit: debug: 2025-06-10T19:36:34.602Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: OpenSSL using default provider
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: Client usage
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: Server usage
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: 2025-06-10T19:36:34.603Z info -[00026] [Originator@6876 sub=Libs] lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: 2025-06-10T19:36:34.727Z info -[00026] [Originator@6876 sub=Libs] [NFC INFO]Nfc_Init: Poll not initialized.
+nbdkit: debug: VixDiskLib: Available transport modes: file:san:hotadd:nbdssl:nbd.
+nbdkit: debug: VMware VixDiskLib (8.0.3) Release build-23950268
+nbdkit: debug: VixDiskLib: PhoneHome is disabled.
+[2025-06-10T19:36:36Z] Attaching volumes to VM
+[2025-06-10T19:36:39Z] Waiting for volume attachment
+[2025-06-10T19:37:24Z] Executing /usr/sbin/nbdcopy --progress=3 --target-is-zero nbd+unix:///?socket=/tmp/nbdkit-2590043116/nbdkit.sock /dev/vdb
+
+[2025-06-10T19:37:24Z] Debug mode enabled. Command output will be logged to /var/log/pf9/migration-alm-saltsvr-01.log
+nbdkit: debug: accepted connection
+nbdkit: vddk[1]: debug: vddk: preconnect
+nbdkit: vddk[1]: debug: newstyle negotiation: flags: global 0x3
+nbdkit: vddk[1]: debug: newstyle negotiation: client flags: 0x3
+nbdkit: vddk[1]: debug: replying to NBD_OPT_EXTENDED_HEADERS with NBD_REP_ERR_UNSUP
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_STRUCTURED_REPLY: client requested structured replies
+nbdkit: vddk[1]: debug: replying to NBD_OPT_STRUCTURED_REPLY with NBD_REP_ACK
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: client requested export ''
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: set count: 1
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: set base:allocation
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: replying with base:allocation id 1
+nbdkit: vddk[1]: debug: replying to NBD_OPT_SET_META_CONTEXT with NBD_REP_ACK
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: reply complete
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_GO: client requested export ''
+nbdkit: vddk[1]: debug: vddk: open readonly=1 exportname="" tls=0
+nbdkit: vddk[1]: debug: vddk: default_export readonly=1 tls=0
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_AllocateConnectParams ()
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_ConnectEx (h->params, 1, snapshot-19420, file:nbdssl:nbd, &connection)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_ConnectEx: Establish connection using file:nbdssl:nbd.
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLibConnectInt: Establish connection.
+nbdkit: vddk[1]: debug: VixDiskLib: Resolve host.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_Open (connection, [sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk, 36, &handle)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_OpenEx: Open disk '[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk'.
+nbdkit: vddk[1]: debug: NBD_ClientOpen: attempting to create connection to FASTLZ-vpxa-nfcssl://[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk@esx-03.alm.mentorg.com:902!52 33 31 8a 22 1c e4 43-a4 a3 3e 00 a1 07 80 99
+nbdkit: vddk[1]: debug: NfcAioOpenSession: the socket options client snd buffer size 87040,           rcv buffer size 131072.
+nbdkit: vddk[1]: debug: NfcAioOpenSession: the socket options server snd buffer size 670000,           rcv buffer size 670000.
+nbdkit: vddk[1]: debug: Opening file [sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk (FASTLZ-vpxa-nfcssl://[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk@esx-03.alm.mentorg.com:902!52 33 31 8a 22 1c e4 43-a4 a3 3e 00 a1 07 80 99)
+nbdkit: vddk[1]: debug: Nbd_ClientSetCallback: Set callback on '[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk' with type 0.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_GetTransportMode (handle)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_GetTransportMode: Retrieve transport mode.
+nbdkit: vddk[1]: debug: transport mode: nbdssl
+nbdkit: vddk[1]: debug: vddk: open returned handle 0x7fcb70001a30
+nbdkit: vddk[1]: debug: vddk: prepare readonly=1
+nbdkit: vddk[1]: debug: vddk: get_size
+nbdkit: debug: VDDK call: VixDiskLib_GetInfo (handle, info)
+nbdkit: debug: VixDiskLib: VixDiskLib_GetInfo: Retrieve disk info.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_FreeInfo (info)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeInfo: Clean up VixDiskLib.
+nbdkit: vddk[1]: debug: vddk: can_zero
+nbdkit: vddk[1]: debug: vddk: can_fast_zero
+nbdkit: vddk[1]: debug: vddk: can_trim
+nbdkit: vddk[1]: debug: vddk: can_fua
+nbdkit: vddk[1]: debug: vddk: can_flush
+nbdkit: vddk[1]: debug: vddk: is_rotational
+nbdkit: vddk[1]: debug: vddk: can_multi_conn
+nbdkit: vddk[1]: debug: vddk: can_cache
+nbdkit: vddk[1]: debug: vddk: can_extents
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 0, 128 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk[1]: debug: newstyle negotiation: flags: export 0x87
+nbdkit: vddk[1]: debug: vddk: block_size
+nbdkit: debug: VDDK call: VixDiskLib_GetInfo (handle, info)
+nbdkit: debug: VixDiskLib: VixDiskLib_GetInfo: Retrieve disk info.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_FreeInfo (info)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeInfo: Clean up VixDiskLib.
+nbdkit: vddk[1]: debug: replying to NBD_OPT_GO with NBD_REP_ACK
+nbdkit: vddk[1]: debug: handshake complete, processing requests with 16 threads
+nbdcopy: error: destination size (167503724544) is smaller than source size (167772160000)
+nbdkit: debug: starting worker thread vddk.0
+nbdkit: debug: starting worker thread vddk.1
+nbdkit: debug: starting worker thread vddk.2
+nbdkit: debug: starting worker thread vddk.3
+nbdkit: debug: starting worker thread vddk.4
+nbdkit: debug: starting worker thread vddk.5
+nbdkit: vddk.0: debug: client closed input socket, closing connection
+nbdkit: vddk.0: debug: exiting worker thread vddk.0
+nbdkit: vddk.1: debug: exiting worker thread vddk.1
+nbdkit: vddk.2: debug: exiting worker thread vddk.2
+nbdkit: vddk.3: debug: exiting worker thread vddk.3
+nbdkit: vddk.4: debug: exiting worker thread vddk.4
+nbdkit: vddk.5: debug: exiting worker thread vddk.5
+nbdkit: debug: starting worker thread vddk.7
+nbdkit: vddk.7: debug: exiting worker thread vddk.7
+nbdkit: debug: starting worker thread vddk.6
+[2025-06-10T19:37:26Z] failed to live replicate disks: failed to copy disk: failed to run nbdcopy: exec: already started. Trying to perform cleanup
+nbdkit: vddk.6: debug: exiting worker thread vddk.6
+nbdkit: debug: starting worker thread vddk.8
+nbdkit: vddk.8: debug: exiting worker thread vddk.8
+nbdkit: debug: starting worker thread vddk.9
+nbdkit: vddk.9: debug: exiting worker thread vddk.9
+nbdkit: debug: starting worker thread vddk.10
+nbdkit: vddk.10: debug: exiting worker thread vddk.10
+nbdkit: debug: starting worker thread vddk.11
+nbdkit: vddk.11: debug: exiting worker thread vddk.11
+nbdkit: debug: starting worker thread vddk.12
+nbdkit: vddk.12: debug: exiting worker thread vddk.12
+nbdkit: debug: starting worker thread vddk.13
+nbdkit: vddk.13: debug: exiting worker thread vddk.13
+nbdkit: debug: starting worker thread vddk.14
+nbdkit: debug: starting worker thread vddk.15
+nbdkit: vddk.15: debug: exiting worker thread vddk.15
+nbdkit: vddk.14: debug: exiting worker thread vddk.14
+nbdkit: vddk[1]: debug: vddk: finalize
+nbdkit: vddk[1]: debug: vddk: close
+nbdkit: debug: VDDK call: VixDiskLib_Wait (handle)
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_Close (handle)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_Close: Close disk '[sas_n2_vmnfs1] alm-saltsvr-01/alm-saltsvr-01.vmdk'.
+nbdkit: vddk[1]: debug: VixDiskLib: Disk Open Time: 491 milliseconds. 
+nbdkit: vddk[1]: debug: VixDiskLib: Disk Close Time: 4 milliseconds. 
+nbdkit: vddk[1]: debug: VixDiskLib: Disk IO Time: 0 milliseconds. 
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_Disconnect (connection)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_Disconnect: Disconnect.
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeConnectParams: Free connection parameters.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_FreeConnectParams (params)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeConnectParams: Free connection parameters.
+[2025-06-10T19:37:44Z] Volume Hard disk 1 deleted
+
+[2025-06-10T19:37:45Z] Failed to migrate VM: failed to live replicate disks: failed to copy disk: failed to run nbdcopy: exec: already started
+VM alm-saltsvr-01 was powered on after migration failure
+nbdkit: debug: vddk: cleanup
+nbdkit: debug: vddk: unload plugin
+nbdkit: debug: VDDK call: VixDiskLib_Exit ()
+nbdkit: debug: VixDiskLib: VixDiskLib_Exit: Unmatched Init calls so far: 1.
