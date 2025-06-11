@@ -1,13 +1,16 @@
 v2v-helper-alm-jenkins-03.alm.mentorg.com-pn482
 v2v-helper-alm-jira-roles-zxo7-jl8tz
 v2v-helper-alm-smartm-vm.alm.mentorg.com-647g4
-v2v-helper-arvind-rnd-machine01-8azk-zj7rf
+v2v-helper-arvind-rnd-machine01-8azk-6tfxv
 v2v-helper-bd.alm.mentorg.com-j7c4v
 v2v-helper-bd78.alm.mentorg.com-l8rbh
 v2v-helper-ftpeps.alm.mentorg.com-gnx7x
 v2v-helper-kw-builder2-vm-2z72-h9s6k
 v2v-helper-kw2.alm.mentorg.com-jf7bh
 v2v-helper-omni-d11x64-1-qn3r-cxg42
+v2v-helper-omni-d11x64-2-8bp8-5hs6j
 v2v-helper-omni-filer-j5tt-mshh6
 v2v-helper-sb-u1804-misc01-92871316-93d7-422b-a73a-892b521lstpg
+v2v-helper-slab-u2204-build2-8bdc-6v4l2
 migration-controller-manager-58b5cc45d6-5tqbt
+migration-controller-manager-58b5cc45d6-7kdvm
