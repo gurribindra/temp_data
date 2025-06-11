@@ -6,6 +6,7 @@ v2v-helper-bd.alm.mentorg.com-s57d5
 v2v-helper-bd78.alm.mentorg.com-l8rbh
 v2v-helper-ftpeps.alm.mentorg.com-gnx7x
 v2v-helper-hardware.alm.mentorg.com-q9l9j
+v2v-helper-hardware2.alm.mentorg.com-ktqhp
 v2v-helper-kw-builder-vm-c8kx-jmvsx
 v2v-helper-kw-builder2-vm-2z72-h9s6k
 v2v-helper-kw2.alm.mentorg.com-jf7bh
@@ -14,6 +15,7 @@ v2v-helper-omni-d11x64-2-8bp8-vpvrv
 v2v-helper-omni-d11x64-3-v0z3-q26ng
 v2v-helper-omni-filer-j5tt-mshh6
 v2v-helper-omni31-u20-64-irxu-5m46h
+v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d17308cr4m
 v2v-helper-sb-u1804-misc01-92871316-93d7-422b-a73a-892b521lstpg
 v2v-helper-scripts-lqjm-2t2sq
 v2v-helper-slab-u2204-build2-8bdc-6v4l2
