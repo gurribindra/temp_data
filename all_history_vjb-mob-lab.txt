@@ -1,0 +1,266 @@
+    1  sudo kubectl get pods -!
+    2  sudo kubectl get pods -A
+    3  wget https://developer.broadcom.com/sdks/vmware-virtual-disk-development-kit-vddk/8.0
+    4  ls
+    5  rm 8.0
+    6  ls
+    7  tar -xvf VMware-vix-disklib-8.0.3-23950268.x86_64.tar.gz -C vmware-vix-disklib-distrib/
+    8  ls -la vmware-vix-disklib-distrib/
+    9  tar -xvf VMware-vix-disklib-8.0.3-23950268.x86_64.tar.gz
+   10  ls -la vmware-vix-disklib-distrib/
+   11  cd vmware-vix-disklib-distrib/
+   12  rm -rf vmware-vix-disklib-distrib/
+   13  ls
+   14  cd ..
+   15  watch sudu kubectl get pods -A
+   16  watch sudo kubectl get pods -A
+   17  sudo kubectl get pods -A
+   18  sudo kubectl logs -n migration-system v2v-helper-omni-filer-j5tt-mshh6
+   19  sudo kubectl logs -n migration-system v2v-helper-omni-filer-j5tt-mshh6 -f
+   20  clear
+   21  ll
+   22  git clone https://github.com/gurribindra/temp_data.git
+   23  ll
+   24  cd temp_data/
+   25  ll
+   26  rm *.log
+   27  ll
+   28  git checkout -b $HOSTNAME
+   29  source consolidate_logs.sh 
+   30  git add --all
+   31  git committ -m "first push for $HOSTNAME"
+   32  git commit -m "first push for $HOSTNAME"
+   33  git push origin $HOSTNAME
+   34  ll
+   35  sudo kubectl get pods -A
+   36  sudo kubectl get pods -n migration-system
+   37  sudo kubectl get pods -n migration-system | grep Error
+   38  sudo kubectl logs -n migration-system v2v-helper-alm-smartm-vm.alm.mentorg.com-647g4
+   39  sudo kubectl logs -n migration-system v2v-helper-arvind-rnd-machine01-8azk-zj7rf
+   40  sudo kubectl get pods -n migration-system | grep Error
+   41  sudo kubectl logs -n migration-system v2v-helper-sb-u1804-misc01-92871316-93d7-422b-a73a-892b521lstpg
+   42  clear
+   43  sudo kubectl get pods -n migration-system
+   44  sudo kubectl logs -n migration-system v2v-helper-bd.alm.mentorg.com-j7c4v
+   45  ip a
+   46  ip a | less
+   47  nano setup_git.sh
+   48  source setup_git.sh 
+   49  git add --all
+   50  git commit -m "setting up git"
+   51  git push origin $HOSTNAME
+   52  clear
+   53  kubectl get pods -A
+   54  sudo kubectl get pods -A
+   55  sudo kubectl logs -n migration-system -f v2v-helper-bd78.alm.mentorg.com-l8rbh
+   56  nc
+   57  nc -v esx-03.alm.mentorg.com 902
+   58  nc -v esx-01.alm.mentorg.com 902
+   59  clear
+   60  sudo kubectl get pods -A
+   61  sudo kubectl get pods -n migration-system
+   62  sudo kubectl get pods -n migration-system | grep running
+   63  sudo kubectl get pods -n migration-system | grep -i running
+   64  sudo kubectl logs -n migration-system v2v-helper-bd.alm.mentorg.com-j7c4v
+   65  sudo kubectl get pods -n migration-system | grep -i running
+   66  sudo kubectl logs -n migration-system v2v-helper-bd78.alm.mentorg.com-l8rbh
+   67  sudo kubectl get pods -n migration-system | grep -i running
+   68  sudo kubectl logs -n migration-system v2v-helper-ftpeps.alm.mentorg.com-gnx7x
+   69  clear
+   70  sudo kubectl logs -n migration-system v2v-helper-ftpeps.alm.mentorg.com-gnx7x
+   71  sudo kubectl logs -n migration-system v2v-helper-bd78.alm.mentorg.com-l8rbh
+   72  sudo kubectl get pods -n migration-system | grep -i running
+   73  clear
+   74  ll
+   75  exit
+   76  cd temp_data/
+   77  ll
+   78  source setup_git.sh 
+   79  source consolidate_logs.sh 
+   80  git add --all
+   81  git commit -m "checking at $(date)"
+   82  git push origin $HOSTNAME
+   83  sudo kubectl get pods -n migration-system
+   84  sudo kubectl get pods -n migration-system | grep Running
+   85  ping alm-jenkins-01.alm.mentorg.com
+   86  nslookup
+   87  clear
+   88  ll
+   89  kubectl get pods -A
+   90  sudo kubectl get pods -A
+   91  sudo kubectl get pods -n migration-system
+   92  sudo kubectl get pods -n migration-system | grep -i running
+   93  sudo kubectl logs -n migration-system v2v-helper-bd.alm.mentorg.com-j7c4v
+   94  sudo kubectl get pods -n migration-system | grep -i running
+   95  sudo kubectl logs -n migration-system v2v-helper-bd78.alm.mentorg.com-l8rbh
+   96  sudo kubectl get pods -n migration-system | grep -i runnin
+   97  sudo kubectl logs -n migration-system v2v-helper-ftpeps.alm.mentorg.com-gnx7x
+   98  clear
+   99  exit
+  100  cd .ssh
+  101  vi authorized_keys 
+  102  cd ..
+  103  sudo kubectl get pods -A
+  104  sudo kubectl logs -n migration-system v2v-helper-ftpeps.alm.mentorg.com-gnx7x
+  105  sudo kubectl logs -n migration-system v2v-helper-ftpeps.alm.mentorg.com-gnx7x -f
+  106  sudo kubectl get pods -A
+  107  sudo kubectl logs -n migration-system v2v-helper-bd78.alm.mentorg.com-l8rbh -f
+  108  sudo kubectl get pods -A
+  109  sudo kubectl logs -n migration-system v2v-helper-kw-builder-vm-c8kx-hxmm4 -f
+  110  sudo kubectl logs -n migration-system v2v-helper-bd78.alm.mentorg.com-l8rbh -f
+  111  ip a
+  112  cd temp_data/
+  113  ll
+  114  source consolidate_logs.sh 
+  115  sudo kubectl get pods -n migration-system
+  116  sudo kubectl get pods -n migration-system | grep -i error
+  117  sudo kubect logs -n migration-system v2v-helper-alm-smartm-vm.alm.mentorg.com-647g4
+  118  sudo kubectl logs -n migration-system v2v-helper-alm-smartm-vm.alm.mentorg.com-647g4
+  119  sudo cat /var/log/pf9/migration-alm-smartm-vm.alm.mentorg.com.log 
+  120  sudo cat /var/log/pf9/migration-alm-smartm-vm.alm.mentorg.com.log | grep -i error
+  121  sudo cat /var/log/pf9/migration-alm-smartm-vm.alm.mentorg.com.log | grep -i smart
+  122  sudo kubectl get pods -n migration-system | grep -i arvind
+  123  sudo kubectl logs -n migration-system v
+  124  sudo cat /var/log/pf9/migration-arvind-rnd-machine01-8azk
+  125  sudo cat /var/log/pf9/migration-arvind-rnd-machine01-8azk.log 
+  126  sudo cat /var/log/pf9/migration-arvind-rnd-machine01-8azk.log | grep -i error
+  127  sudo kubectl get pods -n migration-system | grep -i arvind
+  128  sudo kubectl get pods -n migration-system | grep -i smart
+  129  source consolidate_logs.sh 
+  130  git add --all
+  131  echo $DATE
+  132  export DATE=$(date)
+  133  echo $DATE
+  134  git commit -m "fist backup of $DATE"
+  135  git push origin $HOSTNAME
+  136  sudo kubectl get pods -n migration-system
+  137  sudo kubectl get pods -n migration-system | grep -v -i error
+  138  sudo kubectl get pods -n migration-system | grep -v -i error | grep -v -i completed
+  139  Will join in 5...
+  140  sudo kubectl get pods -n migration-system
+  141  sudo kubectl logs -n migration-system v2v-helper-ftpeps.alm.mentorg.com-gnx7x
+  142  sudo ku
+  143  sudo kubectl get pods -n migration-system
+  144  sudo kubectl logs -n migration-system v2v-helper-omni-d11x64-2-8bp8-5hs6j
+  145  sudo kubectl get pods -n migration-system
+  146  sudo kubectl logs -n migration-system v2v-helper-omni-d11x64-2-8bp8-vpvrv
+  147  sudo kubectl get pods -n migration-system
+  148  sudo kubectl get pods -n migration-system | grep ana
+  149  ll
+  150  cat podsfile.txt 
+  151  cat pods.txt 
+  152  source consolidate_logs.sh 
+  153  git add --all
+  154  git commit -m "upload at $DATE"
+  155  git push origin $HOSTNAME
+  156  clear
+  157  kubectl get pods -A
+  158  sudo kubectl get pods -A
+  159  sudo kubectl get pods -n migration-system
+  160  sudo kubectl get pods -n migration-system | grep -i running
+  161  sudo kubectl logs -n migration-system -f v2v-helper-ftpeps.alm.mentorg.com-gnx7x
+  162  sudo kubectl get pods -n migration-system | grep -i running
+  163  sudo kubectl logs -n migration-system -f v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d17308cr4m
+  164  source consolidate_logs.sh 
+  165  git add --all
+  166  export DATE=$(date)
+  167  git commit -m "push at $DATE"
+  168  git push origin $HOSTNAME
+  169  sudo kubectl get pods -n migration-system 
+  170  sudo kubectl logs -n migration-system -f v2v-helper-bd.alm.mentorg.com-s57d5
+  171  cat /var/log/pf9/migration-bd.alm.mentorg.com.log 
+  172  sudo kubectl logs -n migration-system -f v2v-helper-bd.alm.mentorg.com-s57d5
+  173  unable to retrieve container logs for containerd://046ecab0b6b12ff5aa6352cf185c5de9fdd15d8d202c4bac2d7d6dabfeef3bc6ubuntu@vjb-0-1-12-009:~/temp_data$
+  174  sudo kubectl decsribe pod -n migration-system v2v-helper-bd.alm.mentorg.com-s57d5
+  175  sudo kubectl describe pod -n migration-system v2v-helper-bd.alm.mentorg.com-s57d5
+  176  sudo kubectl get pods -n migration-system 
+  177  sudo kubectl logs -n migration-system -f v2v-helper-ftpeps.alm.mentorg.com-gnx7x
+  178  sudo kubectl describe pod -n migration-system v2v-helper-ftpeps.alm.mentorg.com-gnx7x
+  179  sudo kubectl get pods -n migration-system 
+  180  sudo kubectl get pods -A
+  181  sudo kubectl get pods -A | grep ui
+  182  sudo kubectl get pods -A
+  183  clear
+  184  sudo kubectl get pods -A
+  185  clear
+  186  sudo kubectl get pods -A
+  187  sudo kubectl get pods -A | grep -v -i evicted
+  188  sudo kubectl get pods -A | grep -i evicted
+  189  clear
+  190  sudo kubectl get pods -A
+  191  clear
+  192  sudo kubectl get pods -A | grep bd.alm
+  193  sudo kubectl logs -n migration-system -f v2v-helper-bd.alm.mentorg.com-s57d5
+  194  sudo kubectl get pods -A | grep bd.alm
+  195  sudo kubectl describe pod -n migration-system v2v-helper-bd.alm.mentorg.com-s57d5
+  196  sudo kubectl get pods -A | grep bd.alm
+  197  sudo kubectl get pods -A
+  198  sudo kubectl get pods -A | grep Running
+  199  sudo kubectl get pods -n migration-system | grep Runni
+  200  sudo kubectl get pods -A | grep ops
+  201  sudo kubectl describe pod -n migration-system v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d17308cr4m
+  202  sudo kubectl get pods -A | grep bd.alm
+  203  sudo kubectl describe pod -n migration-system v2v-helper-bd.alm.mentorg.com-s57d5
+  204  sudo kubectl get pods -A 
+  205  sudo kubectl describe pod -n migration-system v2v-helper-bd.alm.mentorg.com-s57d5
+  206  sudo kubectl get pods -A | grep ops
+  207  sudo kubectl get pods -A
+  208  sudo kubectl get pods -A | grep bd.alm
+  209  sudo kubectl get pods
+  210  sudo kubectl get pods -A
+  211  sudo kubectl des
+  212  sudo kubectl get jobs -n migration-system v2v-helper-bd.alm.mentorg.com
+  213  sudo kubectl get jobs -n migration-system v2v-helper-bd.alm.mentorg.com -o yaml
+  214  sudo kubectl get jobs -n migration-system v2v-helper-bd.alm.mentorg.com -o yaml | less
+  215  cd /var/log/pf9
+  216  ll
+  217  cat migration-bd.alm.mentorg.com.log
+  218  cat migration-bd.alm.mentorg.com.log | less
+  219  sudo kubectl get pods -A
+  220  sudo kubectl get migrations -A
+  221  sudo kubectl describe migration -n migration-system migration-bd.alm.mentorg.com
+  222  sudo kubectl get migrations -A migration-bd.alm.mentorg.com
+  223  sudo kubectl get migrations -n migration-system  migration-bd.alm.mentorg.com
+  224  sudo kubectl get migrations -n migration-system  migration-bd.alm.mentorg.com -o yaml
+  225  sudo kubectl get jobs -A
+  226  sudo kubectl edit job -n migration-system v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d1730
+  227  clear
+  228  sudo kubectl edit job -n migration-system v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d1730
+  229  sudo kubectl get job -n migration-system  migration-bd.alm.mentorg.com -o yaml
+  230  sudo kubectl get job -n migration-system v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d1730
+  231  sudo kubectl get job -n migration-system v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d1730 -o yaml
+  232  sudo kubectl get job -n migration-system v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d1730 -o yaml > ~/edited-ops-u16-job.yaml
+  233  cd
+  234  ll
+  235  nano edited-ops-u16-job.yaml 
+  236  sudo kubectl get jobs -n migration-system
+  237  sudo kubectl delete jobs -n migration-system v2v-helper-ops-u16-01-4d0a4ab2-3446-49f1-aae6-21e1f62d1730
+  238  sudo kubectl apply -f edited-ops-u16-job.yaml 
+  239  nano edited-ops-u16-job.yaml 
+  240  sudo kubectl get jobs -n migration-system
+  241  sudo kubectl get pods -n migration-system
+  242  sudo kubectl get pods -n migration-system | grep ops
+  243  clear
+  244  sudo kubectl get pods -n migration-system
+  245  sudo kubectl get pods -n migration-system | grep running
+  246  sudo kubectl get pods -n migration-system | grep Running
+  247  sudo reboot
+  248  ls
+  249  kubectl get pod -A
+  250  sudo su - 
+  251  sudo kubectl get pods -A
+  252  sudo kubectl get pods -n migration-system
+  253  sudo kubectl get pods -n migration-system | grep Running
+  254  sudo kubectl logs -n migration-system -f v2v-helper-shoeleather.alm.mentorg.com-xl4hb
+  255  cd temp_data/
+  256  source consolidate_logs.sh 
+  257  git add --all
+  258  export DATE=$(date)
+  259  git commit -m "1st push for $DATE"
+  260  git push origin $HOSTNAME
+  261  sudo kubectl get pods -n migration-system
+  262  sudo kubectl logs -n migration-system -f v2v-helper-ftpeps.alm.mentorg.com-zc9q6
+  263  sudo kubectl logs -n migration-system  v2v-helper-ftpeps.alm.mentorg.com-zc9q6
+  264  sudo kubectl logs -n migration-system -f v2v-helper-ftpeps.alm.mentorg.com-zc9q6
+  265  history
+  266  history > all_history_vjb-mob-lab.txt
