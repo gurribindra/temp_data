@@ -1,0 +1,157 @@
+    1  ls
+    2  tar -xvf VMware-vix-disklib-8.0.3-23950268.x86_64.tar.gz 
+    3  sudo kubectl get pods -A
+    4  watch sudo kubectl get pods -A
+    5  sudo kubectl get pods -A
+    6  sudo kubectl logs -n migration-system v2v-helper-svr-alm-adc-01-kpqv5
+    7  sudo kubectl logs -n migration-system v2v-helper-svr-alm-adc-01-kpqv5 -f
+    8  sudo kubectl get pods -A
+    9  df -h
+   10  top
+   11  sudo kubectl get pods -A
+   12  top
+   13  sudo kubectl logs -n migration-system
+   14  sudo kubectl get pods -A
+   15  top
+   16  sudo reboot
+   17  sudo kubectl get pods -A
+   18  watch sudo kubectl get pods -A
+   19  sudo kubectl logs -n migration-system 
+   20  sudo kubectl get pods -A
+   21  sudo kubectl logs -n migration-system v2v-helper-svr-alm-adc-01-vlgtk
+   22  sudo kubectl logs -n migration-system v2v-helper-svr-alm-adc-01-vlgtk -f
+   23  ll
+   24  git clone https://github.com/gurribindra/temp_data.git
+   25  ll
+   26  cd temp_data/
+   27  ll
+   28  rm *.log
+   29  source consolidate_logs.sh 
+   30  git add --all
+   31  git checkout -b $HOSTNAME
+   32  git commit -m "first push for $HOSTNAME"
+   33  git push origin $HOSTNAME
+   34  ll
+   35  sudo kubectl get pods -A
+   36  sudo kubectl logs -n migration-system v2v-helper-alm-saltsvr-01-pnl9l
+   37  sudo kubectl get pods -A
+   38  sudo kubectl logs -n migration-system -f v2v-helper-alm-saltsvr-01-kwkgv
+   39  ll
+   40  git add --all
+   41  git commit -m "save"
+   42  source consolidate_logs.sh 
+   43  git add --all
+   44  git commit -m "save"
+   45  git push origin $HOSTNAME
+   46  ll
+   47  nano setup_git.sh
+   48  source setup_git.sh 
+   49  git add --all
+   50  git commit -m "save"
+   51  git push origin $HOSTNAME
+   52  cat setup_git.sh 
+   53  clear
+   54  ll
+   55  nc -v esx-03.alm.mentorg.com 902
+   56  nc -v esx-01.alm.mentorg.com 902
+   57  cat /var/log/pf9/migration-alm-saltsvr-01.log 
+   58  clear
+   59  cat /var/log/pf9/migration-alm-saltsvr-01.log 
+   60  exit
+   61  cd temp_data/
+   62  ll
+   63  source consolidate_logs.sh 
+   64  sudo kubectl logs -n migration-system -f v2v-helper-alm-saltsvr-01-g8gf5
+   65  sudo kubectl get pods -n migration-system
+   66  sudo kubectl logs -n migration-system -f v2v-helper-alm-saltsvr-01-69pnd
+   67  sudo kubectl get pods -n migration-system
+   68  sudo kubectl logs -n migration-system -f v2v-helper-alm-saltsvr-01-9phxh
+   69  cat /var/log/pf9/migration-alm-saltsvr-01.log 
+   70  date
+   71  sudo kubectl get pods -n migration-system
+   72  sudo kubectl logs -n migration-system -f v2v-helper-it.alm.mentorg.com-9r4p4
+   73  sudo kubectl logs -n migration-system -f v2v-helper-rl.alm.mentorg.com-mmsd8
+   74  sudo kubectl logs -n migration-system -f v2v-helper-it.alm.mentorg.com-9r4p4
+   75  sudo kubectl get pods -n migration-system
+   76  sudo kubectl logs -n migration-system -f v2v-helper-us-mob-nvr-02-tm2nt
+   77  sudo kubectl logs -n migration-system -f v2v-helper-svr-alm-mde-01-zwrp6
+   78  clear
+   79  sudo kubectl get pods - n migration-system
+   80  sudo kubectl get pods -n migration-system
+   81  sudo kubectl get pods -n migration-system -o wide
+   82  sudo kubectl logs -n migration-system v2v-helper-alm-saltsvr-01-9phxh
+   83  sudo cat /var/log/pf9/migration-alm-saltsvr-01.log
+   84  sudo mv /var/log/pf9/migration-alm-saltsvr-01.log /var/log/pf9/migration-alm-saltsvr-01.log.01
+   85  clear
+   86  sudo kubectl get pods -n migration-system -o wide
+   87  watch sudo kubectl get pods -n migration-system -o wide
+   88  clear
+   89  sudo kubectl get pods -n migration-system -o wide
+   90  sudo kubectl get pods -n migration-system -o wide -w
+   91  sudo kubectl describe pod v2v-helper-alm-saltsvr-01-mvw8f -n migration-system
+   92  sudo kubectl get pods -n migration-system -o wide -w
+   93  clear
+   94  sudo kubectl get pods -n migration-system -o wide -w
+   95  sudo kubectl describe pod v2v-helper-alm-saltsvr-01-mvw8f -n migration-system
+   96  sudo ll /var/log/pf9/migration-
+   97  sudo ls -l  /var/log/pf9/migration-
+   98  sudo ls -l  /var/log/pf9/
+   99  sudo ll /var/log/pf9/migration-alm-saltsvr-01.log
+  100  sudo cat /var/log/pf9/migration-alm-saltsvr-01.log
+  101  sudo cat /var/log/pf9/migration-alm-saltsvr-01.log | less
+  102  sudo cat /var/log/pf9/migration-alm-saltsvr-01.log
+  103  sudo cat /var/log/pf9/migration-alm-saltsvr-01.log | grep -i error
+  104  clear
+  105  sudo cat /var/log/pf9/migration-alm-saltsvr-01.log | grep -i error
+  106  clear
+  107  ll
+  108  source consolidate_logs.sh 
+  109  git add --all
+  110  git commit -m "saving at $(date)"
+  111  git push origin $HOSTNAME
+  112  ll
+  113  sudo kubectl get pods -A
+  114  sudo kubectl logs -n migration-system v2v-helper-alm-saltsvr-01-2r56j
+  115  sudo less /var/log/pf9/migration-alm-saltsvr-01.log
+  116  clear
+  117  sudo less /var/log/pf9/migration-it.alm.mentorg.com.log 
+  118  ll
+  119  cp /var/log/pf9/migration-alm-saltsvr-01.log .
+  120  ll
+  121  git add --all
+  122  git commit -m "sending files for saltsrv"
+  123  git push origin $HOSTNAME
+  124  source consolidate_logs.sh 
+  125  sudo kubectl get pods -A
+  126  sudo kubectl logs v2v-helper-rl.alm.mentorg.com-mmsd8 -n migration-system
+  127  sudo kubectl logs v2v-helper-rl.alm.mentorg.com-mmsd8 -n migration-system -f
+  128  clear
+  129  sudo kubectl get pods -A
+  130  sudo kubectl logs -n migration-system -f v2v-helper-usmobsemdi1dp-mmsfp
+  131  clear
+  132  export DATE=$(date)
+  133  source consolidate_logs.sh 
+  134  git add --all
+  135  git commit -m "First push of $DATE"
+  136  git push origin $HOSTNAME
+  137  sudo kubectl get pods -A
+  138  sudo kubectl get pods -A | grep -i error
+  139  sudo kubectl get pods -A | grep -e Running
+  140  sudo kubectl get pods -n migration-system | grep -e Running
+  141  sudo reboot
+  142  ls
+  143  kubectl get pods -A | grep -i "rl.alm.mentorg.com"
+  144  sudo su - 
+  145  sudo kubectl get pods -A
+  146  sudo kubectl get pods -A | grep adc
+  147  sudo kubectl get pods -A
+  148  sudo kubectl get pods -A | grep Running
+  149  sudo kubectl delete pod -n migration-system migration-controller-manager-58b5cc45d6-qckc9
+  150  sudo kubectl delete pod -n migration-system vjailbreak-ui-b875ccfd6-h9hw8
+  151  sudo kubectl get pods -A | grep Running
+  152  clear
+  153  sudo reboot
+  154  sudo kubectl get pods -A
+  155  clear
+  156  cd temp_data/
+  157  history > history-mob.txt
