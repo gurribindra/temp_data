@@ -3,7 +3,7 @@ rm consolidated.log
 
 sudo kubectl get pods -A > podsfile.txt
 cat podsfile.txt | grep v2v-helper | tr -s ' ' | cut -d' ' -f 2 > pods.txt
-cat podsfile.txt | grep migration-controller-manager | tr -s ' ' | cut -d' ' -f 2 >> pods.txt
+cat podsfile.txt | grep -i running | grep migration-controller-manager | tr -s ' ' | cut -d' ' -f 2 >> pods.txt
 
 
 
