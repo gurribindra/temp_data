@@ -2,15 +2,13 @@
   "apiVersion": "batch/v1",
   "kind": "Job",
   "metadata": {
-    "generation": 1,
-    "name": "v2v-helper-bd.alm.mentorg.com",
-    "namespace": "migration-system",
+    "name": "v2v-helper-ftpeps.alm.mentorg.com",
+    "namespace": "migration-system"
   },
   "spec": {
     "backoffLimit": 6,
     "completionMode": "NonIndexed",
     "completions": 1,
-    "manualSelector": false,
     "parallelism": 1,
     "podFailurePolicy": {
       "rules": [
@@ -29,11 +27,10 @@
     "suspend": false,
     "template": {
       "metadata": {
-        "creationTimestamp": null,
         "labels": {
-          "job-name": "v2v-helper-bd.alm.mentorg.com",
+          "job-name": "v2v-helper-ftpeps.alm.mentorg.com",
           "startCutover": "yes",
-          "vm-name": "bd.alm.mentorg.com"
+          "vm-name": "ftpeps.alm.mentorg.com"
         }
       },
       "spec": {
@@ -54,7 +51,7 @@
               },
               {
                 "name": "SOURCE_VM_NAME",
-                "value": "bd.alm.mentorg.com"
+                "value": "ftpeps.alm.mentorg.com"
               }
             ],
             "envFrom": [
@@ -65,7 +62,7 @@
               },
               {
                 "secretRef": {
-                  "name": "mob-lab-mob-sls-infra-openstack-secret"
+                  "name": "mob-lab-mob-sls-openstack-secret"
                 }
               },
               {
@@ -140,7 +137,7 @@
           {
             "configMap": {
               "defaultMode": 420,
-              "name": "firstboot-config-bd.alm.mentorg.com"
+              "name": "firstboot-config-ftpeps.alm.mentorg.com"
             },
             "name": "firstboot"
           },
