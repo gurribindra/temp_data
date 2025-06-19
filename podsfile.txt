@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 NAMESPACE          NAME                                                              READY   STATUS      RESTARTS   AGE
 kube-system        coredns-697968c856-d4qfv                                          1/1     Running     0          24h
 kube-system        local-path-provisioner-774c6665dc-t7qwh                           1/1     Running     0          24h
@@ -35,3 +36,26 @@ monitoring         prometheus-adapter-599c88b6c4-8qlps                          
 monitoring         prometheus-k8s-0                                                  2/2     Running     0          24h
 monitoring         prometheus-operator-56bdbffdb6-xqzr6                              2/2     Running     0          24h
 nginx-ingress      nginx-ingress-ingress-nginx-controller-f45478b47-6zm48            1/1     Running     0          24h
+=======
+NAMESPACE          NAME                                                          READY   STATUS    RESTARTS        AGE
+kube-system        coredns-697968c856-p6tml                                      1/1     Running   0               6m45s
+kube-system        local-path-provisioner-774c6665dc-595ch                       1/1     Running   0               6m45s
+kube-system        metrics-server-6f4c6675d5-j6ff5                               1/1     Running   0               6m45s
+kube-system        svclb-grafana-89ff273e-dzbft                                  1/1     Running   0               3m52s
+kube-system        svclb-nginx-ingress-ingress-nginx-controller-cd9678c5-mqbd9   2/2     Running   0               4m17s
+kube-system        svclb-prometheus-k8s-88376ac2-99rlr                           2/2     Running   0               3m51s
+kube-system        sync-daemon-m5htb                                             1/1     Running   0               3m48s
+migration-system   migration-controller-manager-84dc45b44c-pfml7                 1/1     Running   1 (3m46s ago)   3m48s
+migration-system   migration-vpwned-sdk-78db789848-xrlqq                         1/1     Running   0               3m48s
+migration-system   vjailbreak-ui-6c468c66cc-4dclf                                1/1     Running   0               3m48s
+monitoring         alertmanager-main-0                                           2/2     Running   0               3m45s
+monitoring         blackbox-exporter-6695f4d8d-6f2xj                             3/3     Running   0               3m53s
+monitoring         grafana-69cf59765c-ht9q5                                      1/1     Running   0               3m52s
+monitoring         kube-state-metrics-68b7b6bc9f-m84g7                           3/3     Running   0               3m52s
+monitoring         node-exporter-lff6d                                           2/2     Running   0               3m51s
+monitoring         prometheus-adapter-599c88b6c4-6qrxt                           1/1     Running   0               3m51s
+monitoring         prometheus-adapter-599c88b6c4-hqhrl                           1/1     Running   0               3m51s
+monitoring         prometheus-k8s-0                                              2/2     Running   0               3m44s
+monitoring         prometheus-operator-56bdbffdb6-7qq9w                          2/2     Running   0               3m50s
+nginx-ingress      nginx-ingress-ingress-nginx-controller-f45478b47-m74t7        1/1     Running   0               4m17s
+>>>>>>> 07fcb760708de56a072382a7d275321915e837bb
