@@ -5,6 +5,7 @@ sudo kubectl get pods -A > podsfile.txt
 cat podsfile.txt | grep v2v-helper | tr -s ' ' | cut -d' ' -f 2 > pods.txt
 cat podsfile.txt | grep -i running | grep migration-controller-manager | tr -s ' ' | cut -d' ' -f 2 >> pods.txt
 
+sudo cp /var/log/pf9/* logs_repo/.
 
 
 while read F  ; do

@@ -1,0 +1,8 @@
+[2025-06-19T01:27:31Z] -----	 Migration started at 2025-06-19T01:27:31Z for VM shoeleather.alm.mentorg.com -----
+[2025-06-19T01:27:31Z] Running in pod
+[2025-06-19T01:27:34Z] Connected to vCenter: ALM-VC-01.alm.mentorg.com
+
+[2025-06-19T01:27:35Z] Connected to OpenStack
+[2025-06-19T01:27:35Z] VCenter Thumbprint: ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+
+[2025-06-19T01:27:36Z] Creating volumes in OpenStack
