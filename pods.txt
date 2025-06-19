@@ -1,2 +1,1 @@
-v2v-helper-bd.alm.mentorg.com-plhvj
-migration-controller-manager-84dc45b44c-pcl7l
+migration-controller-manager-84dc45b44c-pfml7
