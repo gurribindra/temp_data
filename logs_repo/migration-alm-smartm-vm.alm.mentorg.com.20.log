@@ -1,0 +1,320 @@
+nbdkit: debug: nbdkit 1.42.3 (nbdkit-1.42.3-1.fc42)
+nbdkit: debug: TLS disabled: could not load TLS certificates
+nbdkit: debug: service mode: unix socket
+nbdkit: debug: NBD URI: nbd+unix://?socket=/tmp/nbdkit-2141592289/nbdkit.sock
+nbdkit: debug: registering plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so
+nbdkit: debug: registered plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so (name vddk)
+nbdkit: debug: vddk: load
+nbdkit: warning: debug flag -D  nbdkit.backend.datapath was not used
+nbdkit: warning: debug flag -D  vddk.datapath was not used
+nbdkit: debug: vddk: config key=libdir, value=/home/fedora/vmware-vix-disklib-distrib
+nbdkit: debug: vddk: config key=server, value=ALM-VC-01.alm.mentorg.com
+nbdkit: debug: vddk: config key=user, value=mgc\\svc_vcenter
+nbdkit: debug: vddk: config key=password, value=}[RecUFF::J6}[FsXRayE\\z=9
+nbdkit: debug: vddk: config key=thumbprint, value=ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+nbdkit: debug: vddk: config key=compression, value=fastlz
+nbdkit: debug: vddk: config key=config, value=/home/fedora/vddk.conf
+nbdkit: debug: vddk: config key=transports, value=file:nbdssl:nbd
+nbdkit: debug: vddk: config key=vm, value=moref=vm-11007
+nbdkit: debug: vddk: config key=snapshot, value=snapshot-19617
+nbdkit: debug: vddk: config key=file, value=[sas_n1_vmnfs1] alm-smartm.alm.mentorg.com/alm-smartm.alm.mentorg.com.vmdk
+nbdkit: debug: vddk: config_complete
+nbdkit: debug: using thread model: parallel
+nbdkit: debug: vddk: get_ready
+nbdkit: debug: original command line occupies 599 bytes
+nbdkit: debug: adding reexeced_=
+nbdkit: debug: re-executing with updated LD_LIBRARY_PATH=/home/fedora/vmware-vix-disklib-distrib/lib64
+nbdkit: debug: nbdkit 1.42.3 (nbdkit-1.42.3-1.fc42)
+nbdkit: debug: TLS disabled: could not load TLS certificates
+nbdkit: debug: service mode: unix socket
+nbdkit: debug: NBD URI: nbd+unix://?socket=/tmp/nbdkit-2141592289/nbdkit.sock
+nbdkit: debug: registering plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so
+nbdkit: debug: registered plugin /usr/lib64/nbdkit/plugins/nbdkit-vddk-plugin.so (name vddk)
+nbdkit: debug: vddk: load
+nbdkit: warning: debug flag -D  nbdkit.backend.datapath was not used
+nbdkit: warning: debug flag -D  vddk.datapath was not used
+nbdkit: debug: vddk: config key=libdir, value=/home/fedora/vmware-vix-disklib-distrib
+nbdkit: debug: vddk: config key=server, value=ALM-VC-01.alm.mentorg.com
+nbdkit: debug: vddk: config key=user, value=mgc\\svc_vcenter
+nbdkit: debug: vddk: config key=thumbprint, value=ee:da:39:bb:b1:83:79:aa:f3:b1:7c:7b:2d:51:45:a4:93:ec:b6:a6
+nbdkit: debug: vddk: config key=compression, value=fastlz
+nbdkit: debug: vddk: config key=config, value=/home/fedora/vddk.conf
+nbdkit: debug: vddk: config key=transports, value=file:nbdssl:nbd
+nbdkit: debug: vddk: config key=vm, value=moref=vm-11007
+nbdkit: debug: vddk: config key=snapshot, value=snapshot-19617
+nbdkit: debug: vddk: config key=file, value=[sas_n1_vmnfs1] alm-smartm.alm.mentorg.com/alm-smartm.alm.mentorg.com.vmdk
+nbdkit: debug: vddk: config key=password, value=-3
+nbdkit: debug: vddk: config key=reexeced_, value=
+nbdkit: debug: vddk: config_complete
+nbdkit: debug: cleaning up after re-exec
+nbdkit: debug: using thread model: parallel
+nbdkit: debug: vddk: get_ready
+nbdkit: debug: bound to unix socket /tmp/nbdkit-2141592289/nbdkit.sock
+nbdkit: debug: written pidfile /tmp/nbdkit-2141592289/nbdkit.pid
+nbdkit: debug: vddk: after_fork
+nbdkit: debug: VDDK call: VixDiskLib_InitEx (6, 5, &debug_fn, &error_fn, &error_fn, /home/fedora/vmware-vix-disklib-distrib, /home/fedora/vddk.conf)
+nbdkit: debug: OBJLIB-LIB: Objlib initialized.
+nbdkit: debug: VixDiskLib: Attempting to locate advanced transport module in "/home/fedora/vmware-vix-disklib-distrib".
+nbdkit: debug: VixDiskLib: Advanced transport plugin /home/fedora/vmware-vix-disklib-distrib/lib64/libdiskLibPlugin.so was successfully loaded into vixDiskLib.
+nbdkit: debug: VixDiskLib: Enabling advanced transport modes.
+nbdkit: debug: DictionaryLoad: Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /etc/vmware/config. Using default values.
+nbdkit: debug: 2025-06-20T05:04:31.054Z trivia -[01291] [Originator@6876 sub=ThreadPool] Thread enlisted
+nbdkit: debug: DictionaryLoad: Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /usr/lib/vmware/settings. Using default values.
+nbdkit: debug: DictionaryLoad: Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /usr/lib/vmware/config. Using default values.
+nbdkit: debug: 2025-06-20T05:04:31.055Z info -[01291] [Originator@6876 sub=ThreadPool] Entering fair thread loop
+nbdkit: debug: DictionaryLoad: Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /root/.vmware/config. Using default values.
+nbdkit: debug: DictionaryLoad: Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: PREF Optional preferences file not found at /root/.vmware/preferences. Using default values.
+nbdkit: debug: lib/ssl: OpenSSL using default provider
+nbdkit: debug: lib/ssl: Client usage
+nbdkit: debug: lib/ssl: protocol list tls1.2
+nbdkit: debug: lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: lib/ssl: Server usage
+nbdkit: debug: lib/ssl: protocol list tls1.2
+nbdkit: debug: lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: VixDiskLib: Initialize transport modes.
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC connection accept timeout: 180000 milliseconds
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC request timeout: 180000 milliseconds
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC read timeout: 60000 milliseconds
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC write timeout: 600000 milliseconds
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC fssrvr request timeout: 0 milliseconds
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC fssrvr write timeout: 0 milliseconds
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] [NFC VERBOSE]NFC max recv retries: 1
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/etc/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.191Z info -[01284] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /etc/vmware/config. Using default values.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/settings": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /usr/lib/vmware/settings. Using default values.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/usr/lib/vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /usr/lib/vmware/config. Using default values.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/config": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /root/.vmware/config. Using default values.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] DictionaryLoad: Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] [msg.dictionary.load.openFailed] Cannot open file "/root/.vmware/preferences": No such file or directory.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] PREF Optional preferences file not found at /root/.vmware/preferences. Using default values.
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: OpenSSL using default provider
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: Client usage
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: Server usage
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: protocol min 0x303 max 0x303
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: protocol list tls1.2 (openssl flags 0x36000000)
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: cipher list ECDHE+AESGCM:RSA+AESGCM:ECDHE+AES:RSA+AES
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: cipher suites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384
+nbdkit: debug: 2025-06-20T05:04:31.192Z info -[01284] [Originator@6876 sub=Libs] lib/ssl: curves list prime256v1:secp384r1:secp521r1
+nbdkit: debug: 2025-06-20T05:04:31.318Z info -[01284] [Originator@6876 sub=Libs] [NFC INFO]Nfc_Init: Poll not initialized.
+nbdkit: debug: VixDiskLib: Available transport modes: file:san:hotadd:nbdssl:nbd.
+nbdkit: debug: VMware VixDiskLib (8.0.3) Release build-23950268
+nbdkit: debug: VixDiskLib: PhoneHome is disabled.
+nbdkit: debug: accepted connection
+nbdkit: vddk[1]: debug: vddk: preconnect
+nbdkit: vddk[1]: debug: newstyle negotiation: flags: global 0x3
+nbdkit: vddk[1]: debug: newstyle negotiation: client flags: 0x3
+nbdkit: vddk[1]: debug: replying to NBD_OPT_EXTENDED_HEADERS with NBD_REP_ERR_UNSUP
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_STRUCTURED_REPLY: client requested structured replies
+nbdkit: vddk[1]: debug: replying to NBD_OPT_STRUCTURED_REPLY with NBD_REP_ACK
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: client requested export ''
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: set count: 1
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: set base:allocation
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: replying with base:allocation id 1
+nbdkit: vddk[1]: debug: replying to NBD_OPT_SET_META_CONTEXT with NBD_REP_ACK
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_SET_META_CONTEXT: reply complete
+nbdkit: vddk[1]: debug: newstyle negotiation: NBD_OPT_GO: client requested export ''
+nbdkit: vddk[1]: debug: vddk: open readonly=1 exportname="" tls=0
+nbdkit: vddk[1]: debug: vddk: default_export readonly=1 tls=0
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_AllocateConnectParams ()
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_ConnectEx (h->params, 1, snapshot-19617, file:nbdssl:nbd, &connection)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_ConnectEx: Establish connection using file:nbdssl:nbd.
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLibConnectInt: Establish connection.
+nbdkit: vddk[1]: debug: VixDiskLib: Resolve host.
+nbdkit: vddk[1]: debug: 2025-06-20T05:04:34.292Z warning -[01293] [Originator@6876 sub=transport] Can't find the snapshot snapshot-19617
+nbdkit: vddk[1]: debug: 2025-06-20T05:04:34.302Z error -[01293] [Originator@6876 sub=Default] Cannot use advanced transport modes for 134.86.102.119/moref=vm-11007/snapshot-19617: Snapshot with ID=snapshot-19617 can't apply for the object with ID:42273642-a942-3e8b-81e0-8dac066afec2..
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_ConnectEx: Advanced transport modes not available for opening moref=vm-11007. (Cannot use advanced transport modes for 134.86.102.119/moref=vm-11007/snapshot-19617: Snapshot with ID=snapshot-19617 can't apply for the object with ID:42273642-a942-3e8b-81e0-8dac066afec2..)
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_Open (connection, [sas_n1_vmnfs1] alm-smartm.alm.mentorg.com/alm-smartm.alm.mentorg.com.vmdk, 36, &handle)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_OpenEx: Open disk '[sas_n1_vmnfs1] alm-smartm.alm.mentorg.com/alm-smartm.alm.mentorg.com.vmdk'.
+nbdkit: vddk[1]: debug: 2025-06-20T05:04:36.316Z warning -[01293] [Originator@6876 sub=vimaccess] Can't find the snapshot snapshot-19617
+nbdkit: vddk[1]: debug: NBD_ClientOpen: attempting to create connection to FASTLZ-vpxa-nfc://[sas_n1_vmnfs1] alm-smartm.alm.mentorg.com/alm-smartm.alm.mentorg.com.vmdk@esx-47.alm.mentorg.com:902!52 16 f7 ef 93 81 27 27-56 3e 40 f5 ef 1b af 19
+nbdkit: vddk[1]: debug: NfcAioOpenSession: the socket options client snd buffer size 87040,           rcv buffer size 131072.
+nbdkit: vddk[1]: debug: NfcAioOpenSession: the socket options server snd buffer size 293058,           rcv buffer size 293058.
+nbdkit: vddk[1]: debug: Opening file [sas_n1_vmnfs1] alm-smartm.alm.mentorg.com/alm-smartm.alm.mentorg.com.vmdk (FASTLZ-vpxa-nfc://[sas_n1_vmnfs1] alm-smartm.alm.mentorg.com/alm-smartm.alm.mentorg.com.vmdk@esx-47.alm.mentorg.com:902!52 16 f7 ef 93 81 27 27-56 3e 40 f5 ef 1b af 19)
+nbdkit: vddk[1]: debug: Nbd_ClientSetCallback: Set callback on '[sas_n1_vmnfs1] alm-smartm.alm.mentorg.com/alm-smartm.alm.mentorg.com.vmdk' with type 0.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_GetTransportMode (handle)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_GetTransportMode: Retrieve transport mode.
+nbdkit: vddk[1]: debug: transport mode: nbd
+nbdkit: vddk[1]: debug: vddk: open returned handle 0x7f3220001a30
+nbdkit: vddk[1]: debug: vddk: prepare readonly=1
+nbdkit: vddk[1]: debug: vddk: get_size
+nbdkit: debug: VDDK call: VixDiskLib_GetInfo (handle, info)
+nbdkit: debug: VixDiskLib: VixDiskLib_GetInfo: Retrieve disk info.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_FreeInfo (info)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeInfo: Clean up VixDiskLib.
+nbdkit: vddk[1]: debug: vddk: can_zero
+nbdkit: vddk[1]: debug: vddk: can_fast_zero
+nbdkit: vddk[1]: debug: vddk: can_trim
+nbdkit: vddk[1]: debug: vddk: can_fua
+nbdkit: vddk[1]: debug: vddk: can_flush
+nbdkit: vddk[1]: debug: vddk: is_rotational
+nbdkit: vddk[1]: debug: vddk: can_multi_conn
+nbdkit: vddk[1]: debug: vddk: can_cache
+nbdkit: vddk[1]: debug: vddk: can_extents
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 0, 128 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk[1]: debug: newstyle negotiation: flags: export 0x87
+nbdkit: vddk[1]: debug: vddk: block_size
+nbdkit: debug: VDDK call: VixDiskLib_GetInfo (handle, info)
+nbdkit: debug: VixDiskLib: VixDiskLib_GetInfo: Retrieve disk info.
+nbdkit: vddk[1]: debug: VDDK call: VixDiskLib_FreeInfo (info)
+nbdkit: vddk[1]: debug: VixDiskLib: VixDiskLib_FreeInfo: Clean up VixDiskLib.
+nbdkit: vddk[1]: debug: replying to NBD_OPT_GO with NBD_REP_ACK
+nbdkit: vddk[1]: debug: handshake complete, processing requests with 16 threads
+nbdkit: debug: starting worker thread vddk.0
+nbdkit: vddk.0: debug: vddk: extents count=1048576 offset=91815936000 req_one=1
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 179328000 sectors, 2048 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: starting worker thread vddk.1
+nbdkit: debug: starting worker thread vddk.3
+nbdkit: debug: starting worker thread vddk.4
+nbdkit: debug: starting worker thread vddk.2
+nbdkit: debug: starting worker thread vddk.6
+nbdkit: debug: starting worker thread vddk.7
+nbdkit: debug: starting worker thread vddk.5
+nbdkit: debug: starting worker thread vddk.9
+nbdkit: debug: starting worker thread vddk.8
+nbdkit: debug: starting worker thread vddk.10
+nbdkit: debug: starting worker thread vddk.11
+nbdkit: debug: starting worker thread vddk.12
+nbdkit: debug: starting worker thread vddk.13
+nbdkit: debug: starting worker thread vddk.14
+nbdkit: debug: starting worker thread vddk.15
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk.1: debug: vddk: extents count=2883584 offset=5511577600 req_one=1
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 10764800 sectors, 5632 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk.3: debug: vddk: extents count=1310720 offset=1603970007040 req_one=1
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 3132753920 sectors, 2560 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk.4: debug: vddk: extents count=1048576 offset=162136064000 req_one=1
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 316672000 sectors, 2048 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk.2: debug: vddk: extents count=3145728 offset=85875228672 req_one=1
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 167725056 sectors, 6144 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk.6: debug: vddk: extents count=4194304 offset=643209101312 req_one=1
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 1256267776 sectors, 8192 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk.7: debug: vddk: extents count=1572864 offset=1695134515200 req_one=1
+nbdkit: debug: VDDK call: VixDiskLib_QueryAllocatedBlocks (handle, 3310809600 sectors, 3072 sectors, 128 sectors)
+nbdkit: debug: VixDiskLib: VixDiskLib_QueryAllocatedBlocks: Query allocated blocks.
+nbdkit: debug: VDDK call: VixDiskLib_FreeBlockList (block_list)
+nbdkit: vddk.5: debug: vddk: pread count=262144 offset=869130305536
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 1697520128 sectors, 512 sectors, buffer, callback, 10)
+nbdkit: debug: command 10 completed
+nbdkit: vddk.9: debug: vddk: pread count=262144 offset=1603936452608
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 3132688384 sectors, 512 sectors, buffer, callback, 11)
+nbdkit: debug: command 11 completed
+nbdkit: vddk.8: debug: vddk: pread count=262144 offset=169465872384
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 330988032 sectors, 512 sectors, buffer, callback, 12)
+nbdkit: debug: command 12 completed
+nbdkit: vddk.10: debug: vddk: pread count=262144 offset=438811754496
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 857054208 sectors, 512 sectors, buffer, callback, 13)
+nbdkit: debug: command 13 completed
+nbdkit: vddk.11: debug: vddk: pread count=262144 offset=171068358656
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 334117888 sectors, 512 sectors, buffer, callback, 14)
+nbdkit: debug: command 14 completed
+nbdkit: vddk.12: debug: vddk: pread count=262144 offset=438987128832
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 857396736 sectors, 512 sectors, buffer, callback, 15)
+nbdkit: debug: command 15 completed
+nbdkit: vddk.13: debug: vddk: pread count=262144 offset=868658184192
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 1696598016 sectors, 512 sectors, buffer, callback, 16)
+nbdkit: debug: command 16 completed
+nbdkit: vddk.14: debug: vddk: pread count=262144 offset=1603097591808
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 3131049984 sectors, 512 sectors, buffer, callback, 17)
+nbdkit: debug: command 17 completed
+nbdkit: vddk.15: debug: vddk: pread count=786432 offset=5369757696
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 10487808 sectors, 1536 sectors, buffer, callback, 18)
+nbdkit: debug: command 18 completed
+nbdkit: vddk.0: debug: vddk: pread count=524288 offset=1603917053952
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 3132650496 sectors, 1024 sectors, buffer, callback, 19)
+nbdkit: debug: command 19 completed
+nbdkit: vddk.1: debug: vddk: pread count=262144 offset=1603939860480
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 3132695040 sectors, 512 sectors, buffer, callback, 20)
+nbdkit: debug: command 20 completed
+nbdkit: vddk.3: debug: vddk: pread count=524288 offset=162138161152
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 316676096 sectors, 1024 sectors, buffer, callback, 21)
+nbdkit: debug: command 21 completed
+nbdkit: vddk.4: debug: vddk: pread count=786432 offset=1695137398784
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 3310815232 sectors, 1536 sectors, buffer, callback, 22)
+nbdkit: debug: command 22 completed
+nbdkit: vddk.2: debug: vddk: pread count=786432 offset=1603942481920
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 3132700160 sectors, 1536 sectors, buffer, callback, 23)
+nbdkit: debug: command 23 completed
+nbdkit: vddk.6: debug: vddk: pread count=262144 offset=110731722752
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 216272896 sectors, 512 sectors, buffer, callback, 24)
+nbdkit: debug: command 24 completed
+nbdkit: vddk.7: debug: vddk: pread count=262144 offset=174767996928
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 341343744 sectors, 512 sectors, buffer, callback, 25)
+nbdkit: debug: command 25 completed
+nbdkit: vddk.5: debug: vddk: pread count=524288 offset=182469525504
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 356385792 sectors, 1024 sectors, buffer, callback, 26)
+nbdkit: debug: command 26 completed
+nbdkit: vddk.9: debug: vddk: pread count=262144 offset=185758384128
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 362809344 sectors, 512 sectors, buffer, callback, 27)
+nbdkit: debug: command 27 completed
+nbdkit: vddk.8: debug: vddk: pread count=262144 offset=185808715776
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 362907648 sectors, 512 sectors, buffer, callback, 28)
+nbdkit: debug: command 28 completed
+nbdkit: vddk.10: debug: vddk: pread count=262144 offset=202939826176
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 396366848 sectors, 512 sectors, buffer, callback, 29)
+nbdkit: debug: command 29 completed
+nbdkit: vddk.11: debug: vddk: pread count=262144 offset=211528187904
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 413140992 sectors, 512 sectors, buffer, callback, 30)
+nbdkit: debug: command 30 completed
+nbdkit: vddk.12: debug: vddk: pread count=262144 offset=211529236480
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 413143040 sectors, 512 sectors, buffer, callback, 31)
+nbdkit: debug: command 31 completed
+nbdkit: vddk.13: debug: vddk: pread count=262144 offset=211538673664
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 413161472 sectors, 512 sectors, buffer, callback, 32)
+nbdkit: debug: command 32 completed
+nbdkit: vddk.14: debug: vddk: pread count=524288 offset=185722208256
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 362738688 sectors, 1024 sectors, buffer, callback, 33)
+nbdkit: debug: command 33 completed
+nbdkit: vddk.15: debug: vddk: pread count=262144 offset=104312078336
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 203734528 sectors, 512 sectors, buffer, callback, 34)
+nbdkit: debug: command 34 completed
+nbdkit: vddk.0: debug: vddk: pread count=786432 offset=104899280896
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 204881408 sectors, 1536 sectors, buffer, callback, 35)
+nbdkit: debug: command 35 completed
+nbdkit: vddk.1: debug: vddk: pread count=262144 offset=181463416832
+nbdkit: debug: VDDK call: VixDiskLib_ReadAsync (handle, 354420736 sectors, 512 sectors, buffer, callback, 36)
+nbdkit: debug: command 36 completed
