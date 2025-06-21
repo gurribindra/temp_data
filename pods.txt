@@ -1,7 +1,1 @@
-v2v-helper-alm-smartm-vm.alm.mentorg.com-pjvp7
-v2v-helper-bd.alm.mentorg.com-lf7kv
-v2v-helper-bd78.alm.mentorg.com-xlhc4
-v2v-helper-ftpeps.alm.mentorg.com-lnjsh
-v2v-helper-pastebin2-azhv-lk7zz
-v2v-helper-shoeleather.alm.mentorg.com-sl42b
-migration-controller-manager-d5969dc7b-h6nvw
+migration-controller-manager-bd464c7fd-mqmmv
